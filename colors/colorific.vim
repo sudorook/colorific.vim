@@ -190,7 +190,7 @@ if s:style == "light"
     hi IncSearch    guifg=fg        guibg=#5fd7d7 ctermbg=80
     hi MatchParen   guifg=NONE      guibg=#5fd7d7 ctermbg=80
     hi Search       guifg=fg        guibg=#ffaf00 ctermbg=214
-    hi Visual                       guibg=#afd7ff ctermbg=153
+    hi Visual       guifg=#005f5f guibg=#d7ffff  ctermfg=23 ctermbg=195
     hi Cursor                       guibg=#5f87af ctermbg=67
     hi CursorIM                     guibg=#5f87af ctermbg=67
     hi Error        guifg=#af0000 ctermfg=124   guibg=#d7afaf ctermbg=181
@@ -201,7 +201,7 @@ else
     hi IncSearch    guifg=bg
     hi MatchParen   guifg=bg
     hi Search       guifg=bg
-    hi Visual                       guibg=#005f87 ctermbg=24
+    hi Visual       guifg=#87d7d7 guibg=#005f5f ctermfg=116 ctermbg=23
     hi Cursor                       guibg=#87afd7 ctermbg=110
     hi CursorIM                     guibg=#87afd7 ctermbg=110
     hi Error        guifg=#ff8787 ctermfg=210   guibg=#870000 ctermbg=88
