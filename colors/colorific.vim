@@ -150,7 +150,7 @@ hi Question     guifg=fg
 if s:style == "light"
     hi NonText      guifg=#afafd7 ctermfg=147
     hi SpecialKey   guifg=#afd7af ctermfg=151
-    hi Comment      guifg=#87d7ff ctermfg=117
+    hi Comment      guifg=#808080 ctermfg=244
     hi Constant     guifg=#af5f00 ctermfg=130
     hi Directory    guifg=#00875f ctermfg=29
     hi Identifier   guifg=#008700 ctermfg=28
@@ -162,7 +162,7 @@ if s:style == "light"
 else
     hi NonText      guifg=#5f5f87 ctermfg=60
     hi SpecialKey   guifg=#5f875f ctermfg=65
-    hi Comment      guifg=#87d7ff ctermfg=117
+    hi Comment      guifg=#808080 ctermfg=244
     hi Constant     guifg=#d7d7af ctermfg=187
     hi Directory    guifg=#afd7af ctermfg=151
     hi Identifier   guifg=#afd787 ctermfg=150
