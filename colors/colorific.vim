@@ -202,7 +202,6 @@ else
     hi MatchParen   guifg=bg
     hi Search       guifg=bg
     hi Visual                       guibg=#005f87 ctermbg=24
-    hi Visual                       guibg=#005f87 ctermbg=24
     hi Cursor                       guibg=#87afd7 ctermbg=110
     hi CursorIM                     guibg=#87afd7 ctermbg=110
     hi Error        guifg=#ff8787 ctermfg=210   guibg=#870000 ctermbg=88
