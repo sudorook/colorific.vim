@@ -313,15 +313,15 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-    hi SpellBad     guisp=#d70000
-    hi SpellCap     guisp=#00afd7
-    hi SpellLocal   guisp=#d7af00
-    hi SpellRare    guisp=#5faf00
+    hi SpellBad     guisp=#d70000 guifg=#d70000 ctermfg=160
+    hi SpellCap     guisp=#00afd7 guifg=#00afd7 ctermfg=38
+    hi SpellLocal   guisp=#d7af00 guifg=#d7af00 ctermfg=178
+    hi SpellRare    guisp=#5faf00 guifg=#5faf00 ctermfg=70
 else
-    hi SpellBad     guisp=#d70000
-    hi SpellCap     guisp=#00afd7
-    hi SpellLocal   guisp=#d7af00
-    hi SpellRare    guisp=#5faf00
+    hi SpellBad     guisp=#d70000 guifg=#d70000 ctermfg=160
+    hi SpellCap     guisp=#00afd7 guifg=#00afd7 ctermfg=38
+    hi SpellLocal   guisp=#d7af00 guifg=#d7af00 ctermfg=178
+    hi SpellRare    guisp=#5faf00 guifg=#5faf00 ctermfg=70
 endif
 
 
