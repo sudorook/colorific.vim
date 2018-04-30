@@ -182,7 +182,7 @@ if s:style == "light"
     hi CursorColumn guifg=NONE                 guibg=#dadada ctermbg=253
     hi CursorLine   guifg=NONE                 guibg=#dadada ctermbg=253
     hi IncSearch    guifg=fg                   guibg=#5fd7d7 ctermbg=80
-    hi MatchParen   guifg=NONE                 guibg=#5fd7d7 ctermbg=80
+    hi MatchParen   guifg=#5fafff ctermfg=75
     hi Search       guifg=fg                   guibg=#ffaf00 ctermbg=214
     hi Visual       guifg=#005f5f ctermfg=23   guibg=#d7ffff ctermbg=195
     hi VisualNOS    guifg=fg                   guibg=NONE
@@ -194,7 +194,7 @@ else
     hi CursorColumn guifg=NONE                 guibg=#444444 ctermbg=238
     hi CursorLine   guifg=NONE                 guibg=#444444 ctermbg=238
     hi IncSearch    guifg=#303030 ctermfg=236  guibg=#5fd7d7 ctermbg=80
-    hi MatchParen   guifg=#303030 ctermfg=236  guibg=#afd75f ctermbg=149
+    hi MatchParen   guifg=#afff00 ctermfg=154
     hi Search       guifg=#303030 ctermfg=236  guibg=#d78700 ctermbg=172
     hi Visual       guifg=#87d7d7 ctermfg=116  guibg=#005f5f ctermbg=23
     hi VisualNOS    guifg=fg                   guibg=NONE
