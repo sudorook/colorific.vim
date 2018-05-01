@@ -54,25 +54,25 @@
 unlet! g:colors_name
 hi clear
 if exists("syntax_on")
-    syntax reset
+  syntax reset
 endif
 
 if exists("g:colorific_style")
-    let s:style = g:colorific_style
+  let s:style = g:colorific_style
 else
-    let s:style = &background
+  let s:style = &background
 endif
 
 if exists("g:colorific_use_bold")
-    let s:use_bold = g:colorific_use_bold
+  let s:use_bold = g:colorific_use_bold
 else
-    let s:use_bold = 1
+  let s:use_bold = 1
 endif
 
 if exists("g:colorific_use_underline")
-    let s:use_underline = g:colorific_use_underline
+  let s:use_underline = g:colorific_use_underline
 else
-    let s:use_underline = 1
+  let s:use_underline = 1
 endif
 
 
@@ -118,9 +118,9 @@ hi Normal gui=none cterm=none term=none
 "Without parsing contrast
 
 if s:style == "light"
-  hi Normal       guifg=#444444 ctermfg=238
+  hi Normal         guifg=#444444 ctermfg=238
 else
-  hi Normal       guifg=#d7d7d7 ctermfg=188
+  hi Normal         guifg=#d7d7d7 ctermfg=188
 endif
 
 
@@ -143,8 +143,8 @@ let g:colors_name="colorific"
 " Text Markup:
 " ----------------------------------------------------------------------------
 
-hi ModeMsg      guifg=fg
-hi Question     guifg=fg
+hi ModeMsg          guifg=fg
+hi Question         guifg=fg
 if s:style == "light"
   hi Comment        guifg=#808080 ctermfg=244
   hi Constant       guifg=#af5f00 ctermfg=130
@@ -209,8 +209,8 @@ endif
 " Messages:
 " ----------------------------------------------------------------------------
 
-hi ModeMsg      guifg=fg
-hi Question     guifg=fg
+hi ModeMsg          guifg=fg
+hi Question         guifg=fg
 if s:style == "light"
   hi ErrorMsg       guifg=#af0000 ctermfg=124
   hi MoreMsg        guifg=#005fd7 ctermfg=26
@@ -275,9 +275,9 @@ endif
 " Diff:
 " ----------------------------------------------------------------------------
 
-hi DiffAdd      guifg=fg
-hi DiffChange   guifg=fg
-hi DiffDelete   guifg=fg
+hi DiffAdd          guifg=fg
+hi DiffChange       guifg=fg
+hi DiffDelete       guifg=fg
 
 if s:style == "light"
   hi DiffAdd                                   guibg=#c7f2c7 ctermbg=151
@@ -324,11 +324,11 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-  hi Ignore       guifg=#eeeeee ctermfg=255
+  hi Ignore         guifg=#eeeeee ctermfg=255
 else
-  hi Ignore       guifg=#303030 ctermfg=236
+  hi Ignore         guifg=#303030 ctermfg=236
 endif
-hi Underlined   guifg=fg
+hi Underlined       guifg=fg
 
 
 " ============================================================================
