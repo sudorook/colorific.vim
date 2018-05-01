@@ -297,14 +297,12 @@ if s:style == "light"
     hi DiffAdd                                 guibg=#afd7af ctermbg=151
     hi DiffChange                              guibg=#d7d7af ctermbg=187
     hi DiffDelete                              guibg=#d7afaf ctermbg=181
-    hi DiffText                                guibg=#d7d7af ctermbg=187
-    hi DiffText     guifg=#d75f00 ctermfg=166
+    hi DiffText     guifg=#d75f00 ctermfg=166  guibg=#d7d7af ctermbg=187
 else
     hi DiffAdd                                 guibg=#5f875f ctermbg=65
     hi DiffChange                              guibg=#87875f ctermbg=101
     hi DiffDelete                              guibg=#875f5f ctermbg=95
-    hi DiffText                                guibg=#87875f ctermbg=101
-    hi DiffText     guifg=#ffff87 ctermfg=228
+    hi DiffText     guifg=#ffff87 ctermfg=228  guibg=#87875f ctermbg=101
 endif
 
 
