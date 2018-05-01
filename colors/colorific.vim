@@ -161,8 +161,8 @@ else
   hi Comment        guifg=#808080 ctermfg=244
   hi Constant       guifg=#d7d7af ctermfg=187
   hi Directory      guifg=#afd7af ctermfg=151
-  hi NonText        guifg=#5f5f87 ctermfg=60
   hi Identifier     guifg=#afd787 ctermfg=150
+  hi NonText        guifg=#5f5f87 ctermfg=60
   hi PreProc        guifg=#87d7af ctermfg=115
   hi Special        guifg=#d7afd7 ctermfg=182
   hi SpecialKey     guifg=#5f875f ctermfg=65
