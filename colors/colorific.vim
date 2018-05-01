@@ -84,17 +84,16 @@ let s:normal_items = [
             \ "ColorColumn", "Comment", "Constant", "Cursor", "CursorColumn",
             \ "CursorIM", "CursorLine", "CursorLineNr", "DiffAdd", "DiffChange",
             \ "DiffDelete", "Directory", "Error", "ErrorMsg", "Identifier",
-            \ "IncSearch", "LineNr", "MatchParen", "ModeMsg", "MoreMsg",
-            \ "NonText", "Pmenu", "PmenuSbar", "PmenuSel",
-            \ "PmenuThumb", "PreProc", "Question", "Search", "SignColumn",
-            \ "Special", "SpecialKey", "Statement", "StatusLineNC", "TabLine",
-            \ "TabLineFill", "Todo", "Type", "VertSplit", "Visual",
-            \ "WarningMsg", "WildMenu",
+            \ "IncSearch", "LineNr", "ModeMsg", "MoreMsg", "NonText", "Pmenu",
+            \ "PmenuSbar", "PmenuSel", "PmenuThumb", "PreProc", "Question",
+            \ "Search", "SignColumn", "Special", "SpecialKey", "Statement",
+            \ "StatusLineNC", "TabLine", "TabLineFill", "Todo", "Type",
+            \ "VertSplit", "Visual", "WarningMsg", "WildMenu",
             \ ]
 
 let s:bold_items = [
-            \ "DiffText", "FoldColumn", "Folded", "StatusLine", "TabLineSel",
-            \ "Title",
+            \ "DiffText", "FoldColumn", "Folded", "MatchParen", "StatusLine",
+            \ "TabLineSel", "Title",
             \ ]
 
 let s:underline_items = [
