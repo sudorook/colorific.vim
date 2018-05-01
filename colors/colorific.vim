@@ -81,28 +81,27 @@ endif
 " ============================================================================
 
 let s:normal_items = [
-            \ "ColorColumn", "Comment", "Constant", "Cursor", "CursorColumn",
-            \ "CursorIM", "CursorLine", "CursorLineNr", "DiffAdd", "DiffChange",
-            \ "DiffDelete", "Directory", "Error", "ErrorMsg", "Identifier",
-            \ "IncSearch", "LineNr", "ModeMsg", "MoreMsg", "NonText", "Pmenu",
-            \ "PmenuSbar", "PmenuSel", "PmenuThumb", "PreProc", "Question",
-            \ "Search", "SignColumn", "Special", "SpecialKey", "Statement",
-            \ "StatusLineNC", "TabLine", "TabLineFill", "Todo", "Type",
-            \ "VertSplit", "Visual", "WarningMsg", "WildMenu",
-            \ ]
+  \   "ColorColumn", "Comment", "Constant", "Cursor", "CursorColumn",
+  \   "CursorLine", "CursorLineNr", "DiffAdd", "DiffChange", "DiffDelete",
+  \   "Directory", "Error", "ErrorMsg", "Identifier", "IncSearch", "LineNr",
+  \   "ModeMsg", "MoreMsg", "NonText", "Pmenu", "PmenuSbar", "PmenuSel",
+  \   "PmenuThumb", "PreProc", "Question", "Search", "SignColumn", "Special",
+  \   "SpecialKey", "Statement", "StatusLineNC", "TabLine", "TabLineFill",
+  \   "Todo", "Type", "VertSplit", "Visual", "WarningMsg", "WildMenu",
+  \ ]
 
 let s:bold_items = [
-            \ "DiffText", "FoldColumn", "Folded", "MatchParen", "StatusLine",
-            \ "TabLineSel", "Title",
-            \ ]
+  \   "DiffText", "FoldColumn", "Folded", "MatchParen", "StatusLine",
+  \   "TabLineSel", "Title",
+  \ ]
 
 let s:underline_items = [
-            \ "Underlined", "VisualNOS"
-            \ ]
+  \   "Underlined", "VisualNOS"
+  \ ]
 
 let s:undercurl_items = [
-            \ "SpellBad", "SpellCap", "SpellLocal", "SpellRare"
-            \ ]
+  \   "SpellBad", "SpellCap", "SpellLocal", "SpellRare"
+  \ ]
 
 
 " ============================================================================
@@ -119,9 +118,9 @@ hi Normal gui=none cterm=none term=none
 "Without parsing contrast
 
 if s:style == "light"
-    hi Normal       guifg=#444444 ctermfg=238
+  hi Normal       guifg=#444444 ctermfg=238
 else
-    hi Normal       guifg=#d7d7d7 ctermfg=188
+  hi Normal       guifg=#d7d7d7 ctermfg=188
 endif
 
 
@@ -133,8 +132,8 @@ exec "set background=" . s:style
 
 " Clear default settings
 for s:item in s:normal_items + s:bold_items + s:underline_items + s:undercurl_items
-    exec "hi " . s:item . " guifg=NONE guibg=NONE gui=none"
-                \ . " ctermfg=NONE ctermbg=NONE cterm=none term=none"
+  exec "hi " . s:item . " guifg=NONE guibg=NONE gui=none"
+              \ . " ctermfg=NONE ctermbg=NONE cterm=none term=none"
 endfor
 
 let g:colors_name="colorific"
@@ -147,29 +146,29 @@ let g:colors_name="colorific"
 hi ModeMsg      guifg=fg
 hi Question     guifg=fg
 if s:style == "light"
-    hi Comment      guifg=#808080 ctermfg=244
-    hi Constant     guifg=#af5f00 ctermfg=130
-    hi Directory    guifg=#00875f ctermfg=29
-    hi Identifier   guifg=#008700 ctermfg=28
-    hi NonText      guifg=#afafd7 ctermfg=147
-    hi PreProc      guifg=#008787 ctermfg=30
-    hi Special      guifg=#870087 ctermfg=90
-    hi SpecialKey   guifg=#afd7af ctermfg=151
-    hi Statement    guifg=#005faf ctermfg=25
-    hi Title        guifg=#005faf ctermfg=25
-    hi Type         guifg=#005f87 ctermfg=24
+  hi Comment        guifg=#808080 ctermfg=244
+  hi Constant       guifg=#af5f00 ctermfg=130
+  hi Directory      guifg=#00875f ctermfg=29
+  hi Identifier     guifg=#008700 ctermfg=28
+  hi NonText        guifg=#afafd7 ctermfg=147
+  hi PreProc        guifg=#008787 ctermfg=30
+  hi Special        guifg=#870087 ctermfg=90
+  hi SpecialKey     guifg=#afd7af ctermfg=151
+  hi Statement      guifg=#005faf ctermfg=25
+  hi Title          guifg=#005faf ctermfg=25
+  hi Type           guifg=#005f87 ctermfg=24
 else
-    hi Comment      guifg=#808080 ctermfg=244
-    hi Constant     guifg=#d7d7af ctermfg=187
-    hi Directory    guifg=#afd7af ctermfg=151
-    hi NonText      guifg=#5f5f87 ctermfg=60
-    hi Identifier   guifg=#afd787 ctermfg=150
-    hi PreProc      guifg=#87d7af ctermfg=115
-    hi Special      guifg=#d7afd7 ctermfg=182
-    hi SpecialKey   guifg=#5f875f ctermfg=65
-    hi Statement    guifg=#87d7ff ctermfg=117
-    hi Title        guifg=#5fafd7 ctermfg=74
-    hi Type         guifg=#87d7d7 ctermfg=116
+  hi Comment        guifg=#808080 ctermfg=244
+  hi Constant       guifg=#d7d7af ctermfg=187
+  hi Directory      guifg=#afd7af ctermfg=151
+  hi NonText        guifg=#5f5f87 ctermfg=60
+  hi Identifier     guifg=#afd787 ctermfg=150
+  hi PreProc        guifg=#87d7af ctermfg=115
+  hi Special        guifg=#d7afd7 ctermfg=182
+  hi SpecialKey     guifg=#5f875f ctermfg=65
+  hi Statement      guifg=#87d7ff ctermfg=117
+  hi Title          guifg=#5fafd7 ctermfg=74
+  hi Type           guifg=#87d7d7 ctermfg=116
 endif
 
 
@@ -178,31 +177,31 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-    hi Cursor       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-    hi CursorColumn guifg=NONE                 guibg=#dadada ctermbg=253
-    hi CursorIM     guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-    hi CursorLine   guifg=NONE                 guibg=#dadada ctermbg=253
-    hi Error        guifg=#af0000 ctermfg=124  guibg=#d7afaf ctermbg=181
-    hi IncSearch    guifg=fg                   guibg=#87ffff ctermbg=123
-    hi MatchParen   guibg=#5fd7d7 ctermfg=80
-    hi Search       guifg=fg                   guibg=#ffd75f ctermbg=221
-    hi Todo         guifg=#875f00 ctermfg=94   guibg=#ffffaf ctermbg=229
-    hi Visual       guifg=#005f5f ctermfg=23   guibg=#e1f5f5 ctermbg=195
+  hi Cursor         guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
+  hi CursorColumn   guifg=NONE                 guibg=#dadada ctermbg=253
+  hi CursorIM       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
+  hi CursorLine     guifg=NONE                 guibg=#dadada ctermbg=253
+  hi Error          guifg=#af0000 ctermfg=124  guibg=#d7afaf ctermbg=181
+  hi IncSearch      guifg=fg                   guibg=#87ffff ctermbg=123
+  hi MatchParen     guibg=#5fd7d7 ctermfg=80
+  hi Search         guifg=fg                   guibg=#ffd75f ctermbg=221
+  hi Todo           guifg=#875f00 ctermfg=94   guibg=#ffffaf ctermbg=229
+  hi Visual         guifg=#005f5f ctermfg=23   guibg=#e1f5f5 ctermbg=195
                                                      "^^^^^^ not 8bit
-    hi VisualNOS    guifg=fg                   guibg=NONE
+  hi VisualNOS      guifg=fg                   guibg=NONE
 else
-    hi Cursor       guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
-    hi CursorColumn guifg=NONE                 guibg=#444444 ctermbg=238
-    hi CursorIM     guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
-    hi CursorLine   guifg=NONE                 guibg=#444444 ctermbg=238
-    hi Error        guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
-    hi IncSearch    guifg=#303030 ctermfg=236  guibg=#5fd7ff ctermbg=81
-    hi MatchParen   guifg=#afd75f ctermfg=149
-    hi Search       guifg=#303030 ctermfg=236  guibg=#d78700 ctermbg=172
-    hi Todo         guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
-    hi Visual       guifg=#87d7d7 ctermfg=116  guibg=#294040 ctermbg=23
+  hi Cursor         guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
+  hi CursorColumn   guifg=NONE                 guibg=#444444 ctermbg=238
+  hi CursorIM       guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
+  hi CursorLine     guifg=NONE                 guibg=#444444 ctermbg=238
+  hi Error          guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
+  hi IncSearch      guifg=#303030 ctermfg=236  guibg=#5fd7ff ctermbg=81
+  hi MatchParen     guifg=#afd75f ctermfg=149
+  hi Search         guifg=#303030 ctermfg=236  guibg=#d78700 ctermbg=172
+  hi Todo           guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
+  hi Visual         guifg=#87d7d7 ctermfg=116  guibg=#294040 ctermbg=23
                                                      "^^^^^^ not 8bit
-    hi VisualNOS    guifg=fg                   guibg=NONE
+  hi VisualNOS      guifg=fg                   guibg=NONE
 endif
 
 
@@ -213,13 +212,13 @@ endif
 hi ModeMsg      guifg=fg
 hi Question     guifg=fg
 if s:style == "light"
-    hi ErrorMsg     guifg=#af0000 ctermfg=124
-    hi MoreMsg      guifg=#005fd7 ctermfg=26
-    hi WarningMsg   guifg=#af5f00 ctermfg=130
+  hi ErrorMsg       guifg=#af0000 ctermfg=124
+  hi MoreMsg        guifg=#005fd7 ctermfg=26
+  hi WarningMsg     guifg=#af5f00 ctermfg=130
 else
-    hi ErrorMsg     guifg=#ff5f5f ctermfg=203
-    hi MoreMsg      guifg=#5fd7d7 ctermfg=80
-    hi WarningMsg   guifg=#d7875f ctermfg=173
+  hi ErrorMsg       guifg=#ff5f5f ctermfg=203
+  hi MoreMsg        guifg=#5fd7d7 ctermfg=80
+  hi WarningMsg     guifg=#d7875f ctermfg=173
 endif
 
 
@@ -228,47 +227,47 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-    hi ColorColumn  guifg=NONE                 guibg=#d7d7af ctermbg=187
-    hi CursorLineNr guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
-    hi Folded       guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
+  hi ColorColumn    guifg=NONE                 guibg=#d7d7af ctermbg=187
+  hi CursorLineNr   guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
+  hi Folded         guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
                           "^^^^^^ not 8bit
-    hi FoldColumn   guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
+  hi FoldColumn     guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
                           "^^^^^^ not 8bit
-    hi LineNr       guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
-    hi Pmenu        guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-    hi PmenuSbar    guifg=#808080 ctermfg=244  guibg=#444444 ctermbg=238
-    hi PmenuSel     guifg=fg                   guibg=#afd7ff ctermbg=153
-    hi PmenuThumb   guifg=fg                   guibg=#9e9e9e ctermbg=247
-    hi SignColumn   guifg=#626262 ctermfg=241  guibg=#d0d0d0 ctermbg=252
+  hi LineNr         guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
+  hi Pmenu          guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
+  hi PmenuSbar      guifg=#808080 ctermfg=244  guibg=#444444 ctermbg=238
+  hi PmenuSel       guifg=fg                   guibg=#afd7ff ctermbg=153
+  hi PmenuThumb     guifg=fg                   guibg=#9e9e9e ctermbg=247
+  hi SignColumn     guifg=#626262 ctermfg=241  guibg=#d0d0d0 ctermbg=252
                           "^^^^^^ not 8bit
-    hi StatusLine   guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-    hi StatusLineNC guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
-    hi TabLine      guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-    hi TabLineFill  guifg=#b2b2b2 ctermfg=249  guibg=#808080 ctermbg=244
-    hi TabLineSel   guifg=#eeeeee ctermfg=255  guibg=#afd7ff ctermbg=153
-    hi VertSplit    guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
-    hi WildMenu     guifg=fg                   guibg=#afd7ff ctermbg=153
+  hi StatusLine     guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
+  hi StatusLineNC   guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
+  hi TabLine        guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
+  hi TabLineFill    guifg=#b2b2b2 ctermfg=249  guibg=#808080 ctermbg=244
+  hi TabLineSel     guifg=#eeeeee ctermfg=255  guibg=#afd7ff ctermbg=153
+  hi VertSplit      guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
+  hi WildMenu       guifg=fg                   guibg=#afd7ff ctermbg=153
 else
-    hi ColorColumn  guifg=NONE                 guibg=#87875f ctermbg=101
-    hi CursorLineNr guifg=#626262 ctermfg=241  guibg=#444444 ctermbg=238
+  hi ColorColumn    guifg=NONE                 guibg=#87875f ctermbg=101
+  hi CursorLineNr   guifg=#626262 ctermfg=241  guibg=#444444 ctermbg=238
                           "^^^^^^ not 8bit
-    hi Folded       guifg=#bcbcbc ctermfg=250  guibg=#4e4e4e ctermbg=239
-    hi FoldColumn   guifg=#bcbcbc ctermfg=250  guibg=#4e4e4e ctermbg=239
-    hi LineNr       guifg=#626262 ctermfg=241  guibg=#444444 ctermbg=238
+  hi Folded         guifg=#bcbcbc ctermfg=250  guibg=#4e4e4e ctermbg=239
+  hi FoldColumn     guifg=#bcbcbc ctermfg=250  guibg=#4e4e4e ctermbg=239
+  hi LineNr         guifg=#626262 ctermfg=241  guibg=#444444 ctermbg=238
                           "^^^^^^ not 8bit
-    hi Pmenu        guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=250
-    hi PmenuSbar    guifg=#b2b2b2 ctermfg=249  guibg=#d0d0d0 ctermbg=252
-    hi PmenuSel     guifg=fg                   guibg=#005f87 ctermbg=24
-    hi PmenuThumb   guifg=fg                   guibg=#808080 ctermbg=244
-    hi SignColumn   guifg=#b2b2b2 ctermfg=249  guibg=#4e4e4e ctermbg=239
-    hi StatusLine   guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=249
-    hi StatusLineNC guifg=#444444 ctermfg=238  guibg=#b2b2b2 ctermbg=249
-    hi TabLine      guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=249
-    hi TabLineFill  guifg=#444444 ctermfg=238  guibg=#b2b2b2 ctermbg=249
-    hi TabLineSel   guifg=fg                   guibg=#005f87 ctermbg=24
-    hi VertSplit    guifg=#626262 ctermfg=241  guibg=#b2b2b2 ctermbg=249
+  hi Pmenu          guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=250
+  hi PmenuSbar      guifg=#b2b2b2 ctermfg=249  guibg=#d0d0d0 ctermbg=252
+  hi PmenuSel       guifg=fg                   guibg=#005f87 ctermbg=24
+  hi PmenuThumb     guifg=fg                   guibg=#808080 ctermbg=244
+  hi SignColumn     guifg=#b2b2b2 ctermfg=249  guibg=#4e4e4e ctermbg=239
+  hi StatusLine     guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=249
+  hi StatusLineNC   guifg=#444444 ctermfg=238  guibg=#b2b2b2 ctermbg=249
+  hi TabLine        guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=249
+  hi TabLineFill    guifg=#444444 ctermfg=238  guibg=#b2b2b2 ctermbg=249
+  hi TabLineSel     guifg=fg                   guibg=#005f87 ctermbg=24
+  hi VertSplit      guifg=#626262 ctermfg=241  guibg=#b2b2b2 ctermbg=249
                           "^^^^^^ not 8bit
-    hi WildMenu     guifg=fg                   guibg=#005f87 ctermbg=24
+  hi WildMenu       guifg=fg                   guibg=#005f87 ctermbg=24
 endif
 
 
@@ -281,22 +280,22 @@ hi DiffChange   guifg=fg
 hi DiffDelete   guifg=fg
 
 if s:style == "light"
-    hi DiffAdd                                 guibg=#c7f2c7 ctermbg=151
+  hi DiffAdd                                   guibg=#c7f2c7 ctermbg=151
                                                      "^^^^^^ not 8bit
-    hi DiffChange                              guibg=#f2f2c6 ctermbg=187
+  hi DiffChange                                guibg=#f2f2c6 ctermbg=187
                                                      "^^^^^^ not 8bit
-    hi DiffDelete                              guibg=#f2c6c6 ctermbg=181
+  hi DiffDelete                                guibg=#f2c6c6 ctermbg=181
                                                      "^^^^^^ not 8bit
-    hi DiffText     guifg=#d75f00 ctermfg=166  guibg=#f2f2c6 ctermbg=187
+  hi DiffText       guifg=#d75f00 ctermfg=166  guibg=#f2f2c6 ctermbg=187
                                                      "^^^^^^ not 8bit
 else
-    hi DiffAdd                                 guibg=#426E42 ctermbg=65
+  hi DiffAdd                                   guibg=#426E42 ctermbg=65
                                                      "^^^^^^ not 8bit
-    hi DiffChange                              guibg=#7a7a49 ctermbg=101
+  hi DiffChange                                guibg=#7a7a49 ctermbg=101
                                                      "^^^^^^ not 8bit
-    hi DiffDelete                              guibg=#7A4949 ctermbg=95
+  hi DiffDelete                                guibg=#7A4949 ctermbg=95
                                                      "^^^^^^ not 8bit
-    hi DiffText     guifg=#ffff87 ctermfg=228  guibg=#7a7a49 ctermbg=101
+  hi DiffText       guifg=#ffff87 ctermfg=228  guibg=#7a7a49 ctermbg=101
                                                      "^^^^^^ not 8bit
 endif
 
@@ -306,17 +305,17 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-    hi SpellBad     guisp=#dd2626 guifg=#dd2626 ctermfg=160
+  hi SpellBad       guisp=#dd2626 guifg=#dd2626 ctermfg=160
                           "^^^^^^        ^^^^^^ not 8bit
-    hi SpellCap     guisp=#00afd7 guifg=#00afd7 ctermfg=38
-    hi SpellLocal   guisp=#d7af00 guifg=#d7af00 ctermfg=178
-    hi SpellRare    guisp=#5faf00 guifg=#5faf00 ctermfg=70
+  hi SpellCap       guisp=#00afd7 guifg=#00afd7 ctermfg=38
+  hi SpellLocal     guisp=#d7af00 guifg=#d7af00 ctermfg=178
+  hi SpellRare      guisp=#5faf00 guifg=#5faf00 ctermfg=70
 else
-    hi SpellBad     guisp=#e66868 guifg=#e66868 ctermfg=167
+  hi SpellBad       guisp=#e66868 guifg=#e66868 ctermfg=167
                           "^^^^^^        ^^^^^^ not 8bit
-    hi SpellCap     guisp=#00afd7 guifg=#00afd7 ctermfg=38
-    hi SpellLocal   guisp=#d7af00 guifg=#d7af00 ctermfg=178
-    hi SpellRare    guisp=#5faf00 guifg=#5faf00 ctermfg=70
+  hi SpellCap       guisp=#00afd7 guifg=#00afd7 ctermfg=38
+  hi SpellLocal     guisp=#d7af00 guifg=#d7af00 ctermfg=178
+  hi SpellRare      guisp=#5faf00 guifg=#5faf00 ctermfg=70
 endif
 
 
@@ -325,9 +324,9 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-    hi Ignore       guifg=#eeeeee ctermfg=255
+  hi Ignore       guifg=#eeeeee ctermfg=255
 else
-    hi Ignore       guifg=#303030 ctermfg=236
+  hi Ignore       guifg=#303030 ctermfg=236
 endif
 hi Underlined   guifg=fg
 
@@ -337,22 +336,22 @@ hi Underlined   guifg=fg
 " ============================================================================
 
 if s:use_bold == 1
-    for s:item in s:bold_items
-        exec "hi " . s:item . " gui=bold cterm=bold term=none"
-    endfor
+  for s:item in s:bold_items
+    exec "hi " . s:item . " gui=bold cterm=bold term=none"
+  endfor
 endif
 
 if s:use_underline == 1
-    for s:item in s:underline_items
-        exec "hi " . s:item . " gui=underline cterm=underline term=none"
-    endfor
-    for s:item in s:undercurl_items
-        exec "hi " . s:item . " cterm=underline"
-    endfor
+  for s:item in s:underline_items
+    exec "hi " . s:item . " gui=underline cterm=underline term=none"
+  endfor
+  for s:item in s:undercurl_items
+    exec "hi " . s:item . " cterm=underline"
+  endfor
 endif
 
 for s:item in s:undercurl_items
-    exec "hi " . s:item . " gui=undercurl term=none"
+  exec "hi " . s:item . " gui=undercurl term=none"
 endfor
 
 
@@ -360,16 +359,17 @@ endfor
 " Alternative Bold Definitions:
 " ============================================================================
 
-let s:alternative_bold_items = ["Identifier", "PreProc", "Statement",
-            \ "Special", "Constant", "Type"]
+let s:alternative_bold_items = [
+  \   "Identifier", "PreProc", "Statement", "Special", "Constant", "Type"
+  \ ]
 
 for s:item in s:alternative_bold_items
-    exec "let s:temp_gui_fg = synIDattr(synIDtrans(hlID('" . s:item .
-                \ "')), 'fg', 'gui')"
-    exec "let s:temp_cterm_fg = synIDattr(synIDtrans(hlID('" . s:item .
-                \ "')), 'fg', 'cterm')"
-    exec "hi B" . s:item . " guifg=" . s:temp_gui_fg . " ctermfg=" .
-                \ s:temp_cterm_fg . " gui=bold cterm=bold term=none"
+  exec "let s:temp_gui_fg = synIDattr(synIDtrans(hlID('" . s:item .
+              \ "')), 'fg', 'gui')"
+  exec "let s:temp_cterm_fg = synIDattr(synIDtrans(hlID('" . s:item .
+              \ "')), 'fg', 'cterm')"
+  exec "hi B" . s:item . " guifg=" . s:temp_gui_fg . " ctermfg=" .
+              \ s:temp_cterm_fg . " gui=bold cterm=bold term=none"
 endfor
 
 
