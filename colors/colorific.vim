@@ -147,26 +147,26 @@ let g:colors_name="colorific"
 hi ModeMsg      guifg=fg
 hi Question     guifg=fg
 if s:style == "light"
-    hi NonText      guifg=#afafd7 ctermfg=147
-    hi SpecialKey   guifg=#afd7af ctermfg=151
     hi Comment      guifg=#808080 ctermfg=244
     hi Constant     guifg=#af5f00 ctermfg=130
     hi Directory    guifg=#00875f ctermfg=29
     hi Identifier   guifg=#008700 ctermfg=28
+    hi NonText      guifg=#afafd7 ctermfg=147
     hi PreProc      guifg=#008787 ctermfg=30
     hi Special      guifg=#870087 ctermfg=90
+    hi SpecialKey   guifg=#afd7af ctermfg=151
     hi Statement    guifg=#005faf ctermfg=25
     hi Title        guifg=#005faf ctermfg=25
     hi Type         guifg=#005f87 ctermfg=24
 else
-    hi NonText      guifg=#5f5f87 ctermfg=60
-    hi SpecialKey   guifg=#5f875f ctermfg=65
     hi Comment      guifg=#808080 ctermfg=244
     hi Constant     guifg=#d7d7af ctermfg=187
     hi Directory    guifg=#afd7af ctermfg=151
+    hi NonText      guifg=#5f5f87 ctermfg=60
     hi Identifier   guifg=#afd787 ctermfg=150
     hi PreProc      guifg=#87d7af ctermfg=115
     hi Special      guifg=#d7afd7 ctermfg=182
+    hi SpecialKey   guifg=#5f875f ctermfg=65
     hi Statement    guifg=#87d7ff ctermfg=117
     hi Title        guifg=#5fafd7 ctermfg=74
     hi Type         guifg=#87d7d7 ctermfg=116
@@ -178,31 +178,31 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
+    hi Cursor       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
     hi CursorColumn guifg=NONE                 guibg=#dadada ctermbg=253
+    hi CursorIM     guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
     hi CursorLine   guifg=NONE                 guibg=#dadada ctermbg=253
+    hi Error        guifg=#af0000 ctermfg=124  guibg=#d7afaf ctermbg=181
     hi IncSearch    guifg=fg                   guibg=#87ffff ctermbg=123
     hi MatchParen   guibg=#5fd7d7 ctermfg=80
     hi Search       guifg=fg                   guibg=#ffd75f ctermbg=221
+    hi Todo         guifg=#875f00 ctermfg=94   guibg=#ffffaf ctermbg=229
     hi Visual       guifg=#005f5f ctermfg=23   guibg=#e1f5f5 ctermbg=195
                                                      "^^^^^^ not 8bit
     hi VisualNOS    guifg=fg                   guibg=NONE
-    hi Cursor       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-    hi CursorIM     guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-    hi Error        guifg=#af0000 ctermfg=124  guibg=#d7afaf ctermbg=181
-    hi Todo         guifg=#875f00 ctermfg=94   guibg=#ffffaf ctermbg=229
 else
+    hi Cursor       guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
     hi CursorColumn guifg=NONE                 guibg=#444444 ctermbg=238
+    hi CursorIM     guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
     hi CursorLine   guifg=NONE                 guibg=#444444 ctermbg=238
+    hi Error        guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
     hi IncSearch    guifg=#303030 ctermfg=236  guibg=#5fd7ff ctermbg=81
     hi MatchParen   guifg=#afd75f ctermfg=149
     hi Search       guifg=#303030 ctermfg=236  guibg=#d78700 ctermbg=172
+    hi Todo         guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
     hi Visual       guifg=#87d7d7 ctermfg=116  guibg=#294040 ctermbg=23
                                                      "^^^^^^ not 8bit
     hi VisualNOS    guifg=fg                   guibg=NONE
-    hi Cursor       guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
-    hi CursorIM     guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
-    hi Error        guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
-    hi Todo         guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
 endif
 
 
@@ -230,57 +230,45 @@ endif
 if s:style == "light"
     hi ColorColumn  guifg=NONE                 guibg=#d7d7af ctermbg=187
     hi CursorLineNr guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
-    hi FoldColumn                              guibg=#bcbcbc ctermbg=250
-    hi Folded                                  guibg=#bcbcbc ctermbg=250
+    hi Folded       guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
+                          "^^^^^^ not 8bit
+    hi FoldColumn   guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
+                          "^^^^^^ not 8bit
     hi LineNr       guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
-    hi PmenuSel     guifg=fg                   guibg=#afd7ff ctermbg=153
-    hi SignColumn                              guibg=#d0d0d0 ctermbg=252
-    hi StatusLineNC guifg=#e4e4e4 ctermfg=254
-    hi TabLineFill  guifg=#b2b2b2 ctermfg=249
-    hi VertSplit    guifg=#e4e4e4 ctermfg=254
-    hi WildMenu     guifg=fg                   guibg=#afd7ff ctermbg=153
-    hi FoldColumn   guifg=#626262 ctermfg=241
-                          "^^^^^^ not 8bit
-    hi Folded       guifg=#626262 ctermfg=241
-                          "^^^^^^ not 8bit
     hi Pmenu        guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
     hi PmenuSbar    guifg=#808080 ctermfg=244  guibg=#444444 ctermbg=238
+    hi PmenuSel     guifg=fg                   guibg=#afd7ff ctermbg=153
     hi PmenuThumb   guifg=fg                   guibg=#9e9e9e ctermbg=247
-    hi SignColumn   guifg=#626262 ctermfg=241
+    hi SignColumn   guifg=#626262 ctermfg=241  guibg=#d0d0d0 ctermbg=252
                           "^^^^^^ not 8bit
     hi StatusLine   guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-    hi StatusLineNC                            guibg=#808080 ctermbg=244
+    hi StatusLineNC guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
     hi TabLine      guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-    hi TabLineFill                             guibg=#808080 ctermbg=244
+    hi TabLineFill  guifg=#b2b2b2 ctermfg=249  guibg=#808080 ctermbg=244
     hi TabLineSel   guifg=#eeeeee ctermfg=255  guibg=#afd7ff ctermbg=153
-    hi VertSplit                               guibg=#808080 ctermbg=244
+    hi VertSplit    guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
+    hi WildMenu     guifg=fg                   guibg=#afd7ff ctermbg=153
 else
     hi ColorColumn  guifg=NONE                 guibg=#87875f ctermbg=101
     hi CursorLineNr guifg=#626262 ctermfg=241  guibg=#444444 ctermbg=238
                           "^^^^^^ not 8bit
-    hi FoldColumn                              guibg=#4e4e4e ctermbg=239
-    hi Folded                                  guibg=#4e4e4e ctermbg=239
+    hi Folded       guifg=#bcbcbc ctermfg=250  guibg=#4e4e4e ctermbg=239
+    hi FoldColumn   guifg=#bcbcbc ctermfg=250  guibg=#4e4e4e ctermbg=239
     hi LineNr       guifg=#626262 ctermfg=241  guibg=#444444 ctermbg=238
                           "^^^^^^ not 8bit
-    hi PmenuSel     guifg=fg                   guibg=#005f87 ctermbg=24
-    hi SignColumn                              guibg=#4e4e4e ctermbg=239
-    hi StatusLineNC guifg=#444444 ctermfg=238
-    hi TabLineFill  guifg=#444444 ctermfg=238
-    hi VertSplit    guifg=#626262 ctermfg=241
-                          "^^^^^^ not 8bit
-    hi WildMenu     guifg=fg                   guibg=#005f87 ctermbg=24
-    hi FoldColumn   guifg=#bcbcbc ctermfg=250
-    hi Folded       guifg=#bcbcbc ctermfg=250
     hi Pmenu        guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=250
     hi PmenuSbar    guifg=#b2b2b2 ctermfg=249  guibg=#d0d0d0 ctermbg=252
+    hi PmenuSel     guifg=fg                   guibg=#005f87 ctermbg=24
     hi PmenuThumb   guifg=fg                   guibg=#808080 ctermbg=244
-    hi SignColumn   guifg=#b2b2b2 ctermfg=249
+    hi SignColumn   guifg=#b2b2b2 ctermfg=249  guibg=#4e4e4e ctermbg=239
     hi StatusLine   guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=249
-    hi StatusLineNC                            guibg=#b2b2b2 ctermbg=249
+    hi StatusLineNC guifg=#444444 ctermfg=238  guibg=#b2b2b2 ctermbg=249
     hi TabLine      guifg=#303030 ctermfg=236  guibg=#b2b2b2 ctermbg=249
-    hi TabLineFill                             guibg=#b2b2b2 ctermbg=249
+    hi TabLineFill  guifg=#444444 ctermfg=238  guibg=#b2b2b2 ctermbg=249
     hi TabLineSel   guifg=fg                   guibg=#005f87 ctermbg=24
-    hi VertSplit                               guibg=#b2b2b2 ctermbg=249
+    hi VertSplit    guifg=#626262 ctermfg=241  guibg=#b2b2b2 ctermbg=249
+                          "^^^^^^ not 8bit
+    hi WildMenu     guifg=fg                   guibg=#005f87 ctermbg=24
 endif
 
 
