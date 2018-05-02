@@ -177,10 +177,6 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-  hi Cursor         guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-  hi CursorColumn   guifg=NONE                 guibg=#dadada ctermbg=253
-  hi CursorIM       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-  hi CursorLine     guifg=NONE                 guibg=#dadada ctermbg=253
   hi Error          guifg=#af0000 ctermfg=124  guibg=#d7afaf ctermbg=181
   hi IncSearch      guifg=fg                   guibg=#87ffff ctermbg=123
   hi MatchParen     guibg=#5fd7d7 ctermfg=80
@@ -190,10 +186,6 @@ if s:style == "light"
                                                      "^^^^^^ not 8bit
   hi VisualNOS      guifg=fg                   guibg=NONE
 else
-  hi Cursor         guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
-  hi CursorColumn   guifg=NONE                 guibg=#444444 ctermbg=238
-  hi CursorIM       guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
-  hi CursorLine     guifg=NONE                 guibg=#444444 ctermbg=238
   hi Error          guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
   hi IncSearch      guifg=#303030 ctermfg=236  guibg=#5fd7ff ctermbg=81
   hi MatchParen     guifg=#afd75f ctermfg=149
@@ -228,6 +220,10 @@ endif
 
 if s:style == "light"
   hi ColorColumn    guifg=NONE                 guibg=#d7d7af ctermbg=187
+  hi Cursor         guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
+  hi CursorColumn   guifg=NONE                 guibg=#dadada ctermbg=253
+  hi CursorIM       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
+  hi CursorLine     guifg=NONE                 guibg=#dadada ctermbg=253
   hi CursorLineNr   guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
   hi Folded         guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
                           "^^^^^^ not 8bit
@@ -249,6 +245,10 @@ if s:style == "light"
   hi WildMenu       guifg=fg                   guibg=#afd7ff ctermbg=153
 else
   hi ColorColumn    guifg=NONE                 guibg=#87875f ctermbg=101
+  hi Cursor         guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
+  hi CursorColumn   guifg=NONE                 guibg=#444444 ctermbg=238
+  hi CursorIM       guifg=#303030 ctermfg=236  guibg=#87afd7 ctermbg=110
+  hi CursorLine     guifg=NONE                 guibg=#444444 ctermbg=238
   hi CursorLineNr   guifg=#626262 ctermfg=241  guibg=#444444 ctermbg=238
                           "^^^^^^ not 8bit
   hi Folded         guifg=#bcbcbc ctermfg=250  guibg=#4e4e4e ctermbg=239
