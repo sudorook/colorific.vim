@@ -119,6 +119,7 @@ hi Normal gui=none cterm=none term=none
 
 if s:style == "light"
   hi Normal         guifg=#444444 ctermfg=238
+  " hi Normal         guifg=#37474f ctermfg=238
 else
   hi Normal         guifg=#cfd8dc ctermfg=188
                           "^^^^^^ not 8bit
@@ -221,25 +222,41 @@ endif
 
 if s:style == "light"
   hi ColorColumn    guifg=NONE                 guibg=#d7d7af ctermbg=187
-  hi Cursor         guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-  hi CursorColumn   guifg=NONE                 guibg=#e4e4e4 ctermbg=254
-  hi CursorIM       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-  hi CursorLine     guifg=NONE                 guibg=#e4e4e4 ctermbg=254
-  hi CursorLineNr   guifg=#9e9e9e ctermfg=247  guibg=#e4e4e4 ctermbg=254
-  hi Folded         guifg=#606060 ctermfg=241  guibg=#d0d0d0 ctermbg=252
-  hi FoldColumn     guifg=#606060 ctermfg=241  guibg=#d0d0d0 ctermbg=252
-  hi LineNr         guifg=#8a8a8a ctermfg=245  guibg=#e4e4e4 ctermbg=254
-  hi Pmenu          guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-  hi PmenuSbar      guifg=#808080 ctermfg=244  guibg=#444444 ctermbg=238
+  hi Cursor         guifg=#eceff1 ctermfg=255  guibg=#5f87af ctermbg=67
+                          "^^^^^^ not 8bit
+  hi CursorColumn   guifg=NONE                 guibg=#e3e8eb ctermbg=254
+                                                     "^^^^^^ not 8bit
+  hi CursorIM       guifg=#eceff1 ctermfg=255  guibg=#5f87af ctermbg=67
+                          "^^^^^^ not 8bit
+  hi CursorLine     guifg=NONE                 guibg=#e3e8eb ctermbg=254
+                                                     "^^^^^^ not 8bit
+  hi CursorLineNr   guifg=#90a4ae ctermfg=247  guibg=#e3e8eb ctermbg=254
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi Folded         guifg=#546e7a ctermfg=241  guibg=#cfd8dc ctermbg=252
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi FoldColumn     guifg=#546e7a ctermfg=241  guibg=#cfd8dc ctermbg=252
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi LineNr         guifg=#78909c ctermfg=245  guibg=#e3e8eb ctermbg=254
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi Pmenu          guifg=#eceff1 ctermfg=255  guibg=#6e8895 ctermbg=244
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi PmenuSbar      guifg=#6e8895 ctermfg=244  guibg=#37474f ctermbg=238
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi PmenuSel       guifg=fg                   guibg=#afd7ff ctermbg=153
-  hi PmenuThumb     guifg=fg                   guibg=#9e9e9e ctermbg=247
-  hi SignColumn     guifg=#606060 ctermfg=241  guibg=#d0d0d0 ctermbg=252
-  hi StatusLine     guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-  hi StatusLineNC   guifg=#767676 ctermfg=243  guibg=#e4e4e4 ctermbg=254
-  hi TabLine        guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-  hi TabLineFill    guifg=#767676 ctermfg=243  guibg=#e4e4e4 ctermbg=254
-  hi TabLineSel     guifg=#eeeeee ctermfg=255  guibg=#afd7ff ctermbg=153
-  hi VertSplit      guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
+  hi PmenuThumb     guifg=fg                   guibg=#90a4ae ctermbg=247
+  hi SignColumn     guifg=#546e7a ctermfg=241  guibg=#cfd8dc ctermbg=252
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi StatusLine     guifg=#eceff1 ctermfg=255  guibg=#607d8b ctermbg=244
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi StatusLineNC   guifg=#607d8b ctermfg=243  guibg=#e3e8eb ctermbg=254
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi TabLine        guifg=#eceff1 ctermfg=255  guibg=#6e8895 ctermbg=244
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi TabLineFill    guifg=#607d8b ctermfg=243  guibg=#e3e8eb ctermbg=254
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+  hi TabLineSel     guifg=#eceff1 ctermfg=255  guibg=#afd7ff ctermbg=153
+  hi VertSplit      guifg=#e3e8eb ctermfg=254  guibg=#6e8895 ctermbg=244
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi WildMenu       guifg=fg                   guibg=#afd7ff ctermbg=153
 else
   hi ColorColumn    guifg=NONE                 guibg=#87875f ctermbg=101
@@ -335,7 +352,8 @@ endif
 " ----------------------------------------------------------------------------
 
 if s:style == "light"
-  hi Ignore         guifg=#eeeeee ctermfg=255
+  hi Ignore         guifg=#eceff1 ctermfg=255
+                          "^^^^^^ not 8bit
 else
   hi Ignore         guifg=#263238 ctermfg=236
                           "^^^^^^ not 8bit
