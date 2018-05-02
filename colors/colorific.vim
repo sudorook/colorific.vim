@@ -118,8 +118,8 @@ hi Normal gui=none cterm=none term=none
 "Without parsing contrast
 
 if s:style == "light"
-  hi Normal         guifg=#444444 ctermfg=238
-  " hi Normal         guifg=#37474f ctermfg=238
+  hi Normal         guifg=#37474f ctermfg=238
+                          "^^^^^^ not 8bit
 else
   hi Normal         guifg=#cfd8dc ctermfg=188
                           "^^^^^^ not 8bit
