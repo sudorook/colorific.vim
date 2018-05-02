@@ -337,7 +337,8 @@ endif
 if s:style == "light"
   hi Ignore         guifg=#eeeeee ctermfg=255
 else
-  hi Ignore         guifg=#303030 ctermfg=236
+  hi Ignore         guifg=#263238 ctermfg=236
+                          "^^^^^^ not 8bit
 endif
 hi Underlined       guifg=fg
 
