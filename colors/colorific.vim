@@ -304,7 +304,7 @@ else
                                                      "^^^^^^ not 8bit
   hi DiffChange                                guibg=#7a7a49 ctermbg=101
                                                      "^^^^^^ not 8bit
-  hi DiffDelete                                guibg=#7A4949 ctermbg=95
+  hi DiffDelete                                guibg=#7a4949 ctermbg=95
                                                      "^^^^^^ not 8bit
   hi DiffText       guifg=#ffff87 ctermfg=228  guibg=#7a7a49 ctermbg=101
                                                      "^^^^^^ not 8bit
