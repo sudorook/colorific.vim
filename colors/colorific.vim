@@ -221,25 +221,22 @@ endif
 if s:style == "light"
   hi ColorColumn    guifg=NONE                 guibg=#d7d7af ctermbg=187
   hi Cursor         guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-  hi CursorColumn   guifg=NONE                 guibg=#dadada ctermbg=253
+  hi CursorColumn   guifg=NONE                 guibg=#e4e4e4 ctermbg=254
   hi CursorIM       guifg=#eeeeee ctermfg=255  guibg=#5f87af ctermbg=67
-  hi CursorLine     guifg=NONE                 guibg=#dadada ctermbg=253
-  hi CursorLineNr   guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
-  hi Folded         guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
-                          "^^^^^^ not 8bit
-  hi FoldColumn     guifg=#626262 ctermfg=241  guibg=#bcbcbc ctermbg=250
-                          "^^^^^^ not 8bit
-  hi LineNr         guifg=#9e9e9e ctermfg=247  guibg=#dadada ctermbg=253
+  hi CursorLine     guifg=NONE                 guibg=#e4e4e4 ctermbg=254
+  hi CursorLineNr   guifg=#9e9e9e ctermfg=247  guibg=#e4e4e4 ctermbg=254
+  hi Folded         guifg=#606060 ctermfg=241  guibg=#d0d0d0 ctermbg=252
+  hi FoldColumn     guifg=#606060 ctermfg=241  guibg=#d0d0d0 ctermbg=252
+  hi LineNr         guifg=#8a8a8a ctermfg=245  guibg=#e4e4e4 ctermbg=254
   hi Pmenu          guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
   hi PmenuSbar      guifg=#808080 ctermfg=244  guibg=#444444 ctermbg=238
   hi PmenuSel       guifg=fg                   guibg=#afd7ff ctermbg=153
   hi PmenuThumb     guifg=fg                   guibg=#9e9e9e ctermbg=247
-  hi SignColumn     guifg=#626262 ctermfg=241  guibg=#d0d0d0 ctermbg=252
-                          "^^^^^^ not 8bit
+  hi SignColumn     guifg=#606060 ctermfg=241  guibg=#d0d0d0 ctermbg=252
   hi StatusLine     guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-  hi StatusLineNC   guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
+  hi StatusLineNC   guifg=#767676 ctermfg=243  guibg=#e4e4e4 ctermbg=254
   hi TabLine        guifg=#eeeeee ctermfg=255  guibg=#808080 ctermbg=244
-  hi TabLineFill    guifg=#b2b2b2 ctermfg=249  guibg=#808080 ctermbg=244
+  hi TabLineFill    guifg=#767676 ctermfg=243  guibg=#e4e4e4 ctermbg=254
   hi TabLineSel     guifg=#eeeeee ctermfg=255  guibg=#afd7ff ctermbg=153
   hi VertSplit      guifg=#e4e4e4 ctermfg=254  guibg=#808080 ctermbg=244
   hi WildMenu       guifg=fg                   guibg=#afd7ff ctermbg=153
