@@ -148,7 +148,7 @@ let g:colors_name="colorific"
 hi ModeMsg          guifg=fg
 hi Question         guifg=fg
 if s:style == "light"
-  hi Comment        guifg=#808080 ctermfg=244
+  hi Comment        guifg=#78909c ctermfg=244
   hi Constant       guifg=#af5f00 ctermfg=130
   hi Directory      guifg=#00875f ctermfg=29
   hi Identifier     guifg=#008700 ctermfg=28
@@ -160,7 +160,7 @@ if s:style == "light"
   hi Title          guifg=#005faf ctermfg=25
   hi Type           guifg=#005f87 ctermfg=24
 else
-  hi Comment        guifg=#808080 ctermfg=244
+  hi Comment        guifg=#78909c ctermfg=244
   hi Constant       guifg=#d7d7af ctermfg=187
   hi Directory      guifg=#afd7af ctermfg=151
   hi Identifier     guifg=#afd787 ctermfg=150
