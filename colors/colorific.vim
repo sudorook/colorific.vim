@@ -281,7 +281,7 @@ else
   hi PmenuSbar      guifg=#b0b3c5 ctermfg=249  guibg=#cfd8dc ctermbg=252
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi PmenuSel       guifg=fg                   guibg=#005faf ctermbg=25
-  hi PmenuThumb     guifg=fg                   guibg=#90a4ae ctermbg=244
+  hi PmenuThumb     guifg=fg                   guibg=#607d8b ctermbg=244
   hi SignColumn     guifg=#b0b3c5 ctermfg=249  guibg=#37474f ctermbg=237
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi StatusLine     guifg=#263238 ctermfg=235  guibg=#b0bec5 ctermbg=249
@@ -293,7 +293,7 @@ else
   hi TabLineFill    guifg=#90a4ae ctermfg=246  guibg=#2e3c44 ctermbg=236
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi TabLineSel     guifg=fg                   guibg=#005faf ctermbg=25
-  hi VertSplit      guifg=#607d8b ctermfg=241  guibg=#b0bec5 ctermbg=249
+  hi VertSplit      guifg=#546e7a ctermfg=241  guibg=#b0bec5 ctermbg=249
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi WildMenu       guifg=fg                   guibg=#005faf ctermbg=25
 endif
