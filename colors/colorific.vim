@@ -193,7 +193,7 @@ if s:style == "light"
 else
   hi Error          guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
   hi IncSearch      guifg=#303030 ctermfg=236  guibg=#5fd7ff ctermbg=81
-  hi MatchParen     guifg=#afd75f ctermfg=149
+  hi MatchParen     guifg=#1d2224 ctermfg=234  guibg=#8787ff ctermbg=105
   hi Search         guifg=#303030 ctermfg=236  guibg=#d78700 ctermbg=172
   hi Todo           guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
   hi Visual         guifg=#87d7d7 ctermfg=116  guibg=#294040 ctermbg=23
