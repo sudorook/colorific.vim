@@ -184,7 +184,7 @@ endif
 if s:style == "light"
   hi Error          guifg=#af0000 ctermfg=124  guibg=#d7afaf ctermbg=181
   hi IncSearch      guifg=fg                   guibg=#87ffff ctermbg=123
-  hi MatchParen     guibg=#5fd7d7 ctermfg=80
+  hi MatchParen     guifg=NONE                 guibg=#b39ddb ctermbg=117
   hi Search         guifg=fg                   guibg=#ffd75f ctermbg=221
   hi Todo           guifg=#875f00 ctermfg=94   guibg=#ffffaf ctermbg=229
   hi Visual         guifg=#005f5f ctermfg=23   guibg=#e1f5f5 ctermbg=195
@@ -193,7 +193,7 @@ if s:style == "light"
 else
   hi Error          guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
   hi IncSearch      guifg=#303030 ctermfg=236  guibg=#5fd7ff ctermbg=81
-  hi MatchParen     guifg=#1d2224 ctermfg=234  guibg=#8787ff ctermbg=105
+  hi MatchParen     guifg=#eceff1 ctermfg=255  guibg=#5e35b1 ctermbg=61
   hi Search         guifg=#303030 ctermfg=236  guibg=#d78700 ctermbg=172
   hi Todo           guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
   hi Visual         guifg=#87d7d7 ctermfg=116  guibg=#294040 ctermbg=23
