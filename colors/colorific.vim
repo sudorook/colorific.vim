@@ -362,22 +362,22 @@ hi DiffChange       guifg=fg
 hi DiffDelete       guifg=fg
 
 if s:style == "light"
-  hi DiffAdd                                   guibg=#c7f2d5 ctermbg=151
+  hi DiffAdd                                   guibg=#aef2c4 ctermbg=151
                                                      "^^^^^^ not 8bit
-  hi DiffChange                                guibg=#f2f2c6 ctermbg=187
+  hi DiffChange                                guibg=#f2f2ae ctermbg=187
                                                      "^^^^^^ not 8bit
-  hi DiffDelete                                guibg=#f2c6c6 ctermbg=181
+  hi DiffDelete                                guibg=#f2aeae ctermbg=181
                                                      "^^^^^^ not 8bit
-  hi DiffText       guifg=#d75f00 ctermfg=166  guibg=#f2f2c6 ctermbg=187
+  hi DiffText       guifg=#d75f00 ctermfg=166  guibg=#f2f2ae ctermbg=187
                                                      "^^^^^^ not 8bit
 else
-  hi DiffAdd                                   guibg=#426e51 ctermbg=65
+  hi DiffAdd                                   guibg=#376e49 ctermbg=65
                                                      "^^^^^^ not 8bit
-  hi DiffChange                                guibg=#7a7a49 ctermbg=101
+  hi DiffChange                                guibg=#7a7a3d ctermbg=101
                                                      "^^^^^^ not 8bit
-  hi DiffDelete                                guibg=#7a4949 ctermbg=95
+  hi DiffDelete                                guibg=#7a3d3d ctermbg=95
                                                      "^^^^^^ not 8bit
-  hi DiffText       guifg=#ffffaf ctermfg=229  guibg=#7a7a49 ctermbg=101
+  hi DiffText       guifg=#ffffaf ctermfg=229  guibg=#7a7a3d ctermbg=101
                                                      "^^^^^^ not 8bit
 endif
 
