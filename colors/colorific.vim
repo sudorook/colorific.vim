@@ -145,6 +145,9 @@ let g:colors_name="colorific"
 " Text Markup:
 " ----------------------------------------------------------------------------
 
+" If you don't know what a specific group does, :help highlight-group works
+" wonders.
+
 hi ModeMsg          guifg=fg
 hi Question         guifg=fg
 if s:style == "light"
