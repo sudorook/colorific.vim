@@ -151,29 +151,80 @@ let g:colors_name="colorific"
 hi ModeMsg          guifg=fg
 hi Question         guifg=fg
 if s:style == "light"
-  hi Comment        guifg=#78909c ctermfg=244
-  hi Constant       guifg=#af5f00 ctermfg=130
-  hi Directory      guifg=#00875f ctermfg=29
-  hi Identifier     guifg=#008700 ctermfg=28
-  hi NonText        guifg=#afafd7 ctermfg=147
-  hi PreProc        guifg=#008787 ctermfg=30
-  hi Special        guifg=#870087 ctermfg=90
-  hi SpecialKey     guifg=#afd7af ctermfg=151
-  hi Statement      guifg=#005faf ctermfg=25
-  hi Title          guifg=#005faf ctermfg=25
-  hi Type           guifg=#005f87 ctermfg=24
+  hi Comment                          guifg=#78909c ctermfg=244
+  hi Constant                         guifg=#af5f00 ctermfg=130
+  hi Directory                        guifg=#00875f ctermfg=29
+  hi Identifier                       guifg=#008700 ctermfg=28
+  hi NonText                          guifg=#afafd7 ctermfg=147
+  hi PreProc                          guifg=#008787 ctermfg=30
+  hi Special                          guifg=#870087 ctermfg=90
+  hi SpecialKey                       guifg=#afd7af ctermfg=151
+  hi Statement                        guifg=#005faf ctermfg=25
+  hi Title                            guifg=#005faf ctermfg=25
+  hi Type                             guifg=#005f87 ctermfg=24
 else
-  hi Comment        guifg=#78909c ctermfg=244
-  hi Constant       guifg=#d7d7af ctermfg=187
-  hi Directory      guifg=#afd7af ctermfg=151
-  hi Identifier     guifg=#afd787 ctermfg=150
-  hi NonText        guifg=#5f5f87 ctermfg=60
-  hi PreProc        guifg=#87d7af ctermfg=115
-  hi Special        guifg=#d7afd7 ctermfg=182
-  hi SpecialKey     guifg=#5f875f ctermfg=65
-  hi Statement      guifg=#87d7ff ctermfg=117
-  hi Title          guifg=#5fafd7 ctermfg=74
-  hi Type           guifg=#87d7d7 ctermfg=116
+  " Default groups
+  hi Boolean                          guifg=#18ffff ctermfg=14
+  hi Comment                          guifg=#78909c ctermfg=244
+  hi Character                        guifg=#80d8ff ctermfg=117
+  hi Conditional                      guifg=#ffa726 ctermfg=214
+  hi Constant                         guifg=#18ffff ctermfg=14
+  hi Debug                            guifg=#ea80fc ctermfg=117
+  hi Define                           guifg=#00e676 ctermfg=42
+  hi Delimiter                        guifg=#b39ddb ctermfg=146
+  hi Directory                        guifg=#64b5f6 ctermfg=75
+  hi Exception                        guifg=#ea80fc ctermfg=117
+  hi Float                            guifg=#EF5350 ctermfg=203
+  hi Function                         guifg=#fff176 ctermfg=228
+  hi Identifier                       guifg=#ff6e40 ctermfg=209
+  hi Include                          guifg=#f06292 ctermfg=205
+  hi Keyword                          guifg=#00e676 ctermfg=42
+  hi Label                            guifg=#ff6e40 ctermfg=209
+  hi Macro                            guifg=#8c9eff ctermfg=111
+  hi NonText                          guifg=#5c6bc0 ctermfg=61
+  hi Number                           guifg=#EF5350 ctermfg=203
+  hi Operator                         guifg=#fff176 ctermfg=228
+  hi PreCondit                        guifg=#8c9eff ctermfg=111
+  hi PreProc                          guifg=#8c9eff ctermfg=111
+  hi Repeat                           guifg=#ffa726 ctermfg=214
+  hi Special                          guifg=#40c4ff ctermfg=81
+  hi SpecialChar                      guifg=#40c4ff ctermfg=81
+  hi SpecialComment                   guifg=#40c4ff ctermfg=81
+  hi SpecialKey                       guifg=#40c4ff ctermfg=81
+  hi Statement                        guifg=#00e676 ctermfg=42
+  hi StorageClass                     guifg=#1DE9B6 ctermfg=86
+  hi String                           guifg=#80d8ff ctermfg=117
+  hi Structure                        guifg=#06c7a8 ctermfg=43
+  hi Tag                              guifg=#1DE9B6 ctermfg=86
+  hi Title                            guifg=#64b5f6 ctermfg=75
+  hi Type                             guifg=#06c7a8 ctermfg=43
+  hi TypeDef                          guifg=#1DE9B6 ctermfg=86
+
+  " Overrides
+  hi link cssBraces Delimiter
+  hi link cssColor Number
+  hi GitGutterAdd                     guifg=#69f0ae ctermfg=85
+  hi GitGutterChange                  guifg=#ffff00 ctermfg=11
+  hi GitGutterChangeDelete            guifg=#ffab40 ctermfg=215
+  hi GitGutterDelete                  guifg=#ff5252 ctermfg=203
+  hi link htmlArg Statement
+  hi link htmlEndTag Type
+  hi link htmlTag Tag
+  hi link htmlTagName Function
+  hi link javaScriptBraces Delimiter
+  hi link javaScriptNumber Number
+  hi markdownCode                     guifg=#f48fb1 ctermfg=211
+  hi link markdownUrl String
+  hi link markdownUrlTitle Special
+  hi link NERDTreeDirSlash Normal
+  hi NERDTreeExecFile                 guifg=#69f0ae ctermfg=85
+  hi link sassFor Repeat
+  hi link sassMixin Include
+  hi link sassMixinName String
+  hi link sassMixing Include
+  hi link sassWarn Debug
+  hi link shFunctionKey Define
+  hi link shLoop Repeat
 endif
 
 
