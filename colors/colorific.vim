@@ -81,13 +81,22 @@ endif
 " ============================================================================
 
 let s:normal_items = [
-  \   "ColorColumn", "Comment", "Constant", "Cursor", "CursorColumn",
-  \   "CursorLine", "CursorLineNr", "DiffAdd", "DiffChange", "DiffDelete",
-  \   "Directory", "Error", "ErrorMsg", "Identifier", "IncSearch", "LineNr",
-  \   "ModeMsg", "MoreMsg", "NonText", "Pmenu", "PmenuSbar", "PmenuSel",
-  \   "PmenuThumb", "PreProc", "Question", "Search", "SignColumn", "Special",
-  \   "SpecialKey", "Statement", "StatusLineNC", "TabLine", "TabLineFill",
-  \   "Todo", "Type", "VertSplit", "Visual", "WarningMsg", "WildMenu",
+  \  "Boolean", "Character", "ColorColumn", "Comment", "Conditional",
+  \  "Constant", "cssBraces", "cssColor", "Cursor", "CursorColumn",
+  \  "CursorLine", "CursorLineNr", "Debug", "Define", "Delimiter", "DiffAdd",
+  \  "DiffChange", "DiffDelete", "Directory", "Error", "ErrorMsg", "Exception",
+  \  "Float", "Function", "GitGutterAdd", "GitGutterChange",
+  \  "GitGutterChangeDelete", "GitGutterDelete", "htmlArg", "htmlEndTag",
+  \  "htmlTag", "htmlTagName", "Identifier", "Include", "IncSearch",
+  \  "javaScriptBraces", "javaScriptNumber", "Keyword", "Label", "LineNr",
+  \  "Macro", "markdownCode", "markdownUrl", "markdownUrlTitle", "ModeMsg",
+  \  "MoreMsg", "NERDTreeDirSlash", "NERDTreeExecFile", "NonText", "Number",
+  \  "Pmenu", "PmenuSbar", "PmenuSel", "PmenuThumb", "PreProc", "PreProc",
+  \  "Question", "Repeat", "sassFor", "sassMixin", "sassMixinName",
+  \  "sassMixing", "sassWarn", "Search", "shFunctionKey", "shLoop",
+  \  "SignColumn", "Special", "SpecialChar", "SpecialComment", "SpecialKey",
+  \  "Statement", "StatusLineNC", "TabLine", "TabLineFill", "Tag", "Todo",
+  \  "Type", "TypeDef", "VertSplit", "Visual", "WarningMsg", "WildMenu",
   \ ]
 
 let s:bold_items = [
