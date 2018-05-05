@@ -215,41 +215,41 @@ if s:style == "light"
   hi link shLoop Repeat
 else
   " Default groups
-  hi Boolean                          guifg=#18ffff ctermfg=14
+  hi Boolean                          guifg=#16e6e6 ctermfg=14
   hi Comment                          guifg=#78909c ctermfg=244
-  hi Character                        guifg=#80d8ff ctermfg=117
-  hi Conditional                      guifg=#ffa726 ctermfg=214
-  hi Constant                         guifg=#18ffff ctermfg=14
-  hi Debug                            guifg=#ea80fc ctermfg=117
-  hi Define                           guifg=#00e676 ctermfg=42
+  hi Character                        guifg=#73c2e6 ctermfg=117
+  hi Conditional                      guifg=#f29f24 ctermfg=214
+  hi Constant                         guifg=#16e6e6 ctermfg=14
+  hi Debug                            guifg=#d373e3 ctermfg=117
+  hi Define                           guifg=#00cc68 ctermfg=42
   hi Delimiter                        guifg=#b39ddb ctermfg=146
   hi Directory                        guifg=#64b5f6 ctermfg=75
-  hi Exception                        guifg=#ea80fc ctermfg=117
-  hi Float                            guifg=#EF5350 ctermfg=203
-  hi Function                         guifg=#fff176 ctermfg=228
-  hi Identifier                       guifg=#ff6e40 ctermfg=209
-  hi Include                          guifg=#f06292 ctermfg=205
-  hi Keyword                          guifg=#00e676 ctermfg=42
-  hi Label                            guifg=#ff6e40 ctermfg=209
-  hi Macro                            guifg=#8c9eff ctermfg=111
+  hi Exception                        guifg=#d373e3 ctermfg=117
+  hi Float                            guifg=#e34f4c ctermfg=203
+  hi Function                         guifg=#d9cc64 ctermfg=228
+  hi Identifier                       guifg=#d97c39 ctermfg=209
+  hi Include                          guifg=#e35d8a ctermfg=205
+  hi Keyword                          guifg=#00cc68 ctermfg=42
+  hi Label                            guifg=#d97c39 ctermfg=209
+  hi Macro                            guifg=#8596f2 ctermfg=111
   hi NonText                          guifg=#5c6bc0 ctermfg=61
-  hi Number                           guifg=#EF5350 ctermfg=203
-  hi Operator                         guifg=#fff176 ctermfg=228
-  hi PreCondit                        guifg=#8c9eff ctermfg=111
-  hi PreProc                          guifg=#8c9eff ctermfg=111
-  hi Repeat                           guifg=#ffa726 ctermfg=214
-  hi Special                          guifg=#40c4ff ctermfg=81
-  hi SpecialChar                      guifg=#40c4ff ctermfg=81
-  hi SpecialComment                   guifg=#40c4ff ctermfg=81
-  hi SpecialKey                       guifg=#40c4ff ctermfg=81
-  hi Statement                        guifg=#00e676 ctermfg=42
-  hi StorageClass                     guifg=#1DE9B6 ctermfg=86
-  hi String                           guifg=#80d8ff ctermfg=117
-  hi Structure                        guifg=#06c7a8 ctermfg=43
-  hi Tag                              guifg=#1DE9B6 ctermfg=86
+  hi Number                           guifg=#e34f4c ctermfg=203
+  hi Operator                         guifg=#d9cc64 ctermfg=228
+  hi PreCondit                        guifg=#8596f2 ctermfg=111
+  hi PreProc                          guifg=#8596f2 ctermfg=111
+  hi Repeat                           guifg=#f29f24 ctermfg=214
+  hi Special                          guifg=#3ab0e6 ctermfg=81
+  hi SpecialChar                      guifg=#3ab0e6 ctermfg=81
+  hi SpecialComment                   guifg=#3ab0e6 ctermfg=81
+  hi SpecialKey                       guifg=#3ab0e6 ctermfg=81
+  hi Statement                        guifg=#00cc68 ctermfg=42
+  hi StorageClass                     guifg=#1bdbab ctermfg=86
+  hi String                           guifg=#73c2e6 ctermfg=117
+  hi Structure                        guifg=#00bfa5 ctermfg=43
+  hi Tag                              guifg=#1bdbab ctermfg=86
   hi Title                            guifg=#64b5f6 ctermfg=75
-  hi Type                             guifg=#06c7a8 ctermfg=43
-  hi TypeDef                          guifg=#1DE9B6 ctermfg=86
+  hi Type                             guifg=#00bfa5 ctermfg=43
+  hi TypeDef                          guifg=#1bdbab ctermfg=86
 
   " Overrides
   hi link cssBraces Delimiter
