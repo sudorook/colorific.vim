@@ -191,10 +191,10 @@ if s:style == "light"
   " Overrides
   hi link cssBraces Delimiter
   hi link cssColor Number
-  hi GitGutterAdd                     guifg=#00c853 ctermfg=41
-  hi GitGutterChange                  guifg=#ffab00 ctermfg=214
-  hi GitGutterChangeDelete            guifg=#ff6d00 ctermfg=202
-  hi GitGutterDelete                  guifg=#d50000 ctermfg=160
+  hi GitGutterAdd                     guifg=#00c853 ctermfg=41   guibg=#e3e8eb ctermbg=254
+  hi GitGutterChange                  guifg=#ffab00 ctermfg=214  guibg=#e3e8eb ctermbg=254
+  hi GitGutterChangeDelete            guifg=#ff6d00 ctermfg=202  guibg=#e3e8eb ctermbg=254
+  hi GitGutterDelete                  guifg=#d50000 ctermfg=160  guibg=#e3e8eb ctermbg=254
   hi link htmlArg Statement
   hi link htmlEndTag Type
   hi link htmlTag Tag
@@ -254,10 +254,10 @@ else
   " Overrides
   hi link cssBraces Delimiter
   hi link cssColor Number
-  hi GitGutterAdd                     guifg=#69f0ae ctermfg=85
-  hi GitGutterChange                  guifg=#ffff00 ctermfg=11
-  hi GitGutterChangeDelete            guifg=#ffab40 ctermfg=215
-  hi GitGutterDelete                  guifg=#ff5252 ctermfg=203
+  hi GitGutterAdd                     guifg=#69f0ae ctermfg=85   guibg=#2e3c44 ctermbg=236
+  hi GitGutterChange                  guifg=#ffff00 ctermfg=11   guibg=#2e3c44 ctermbg=236
+  hi GitGutterChangeDelete            guifg=#ffab40 ctermfg=215  guibg=#2e3c44 ctermbg=236
+  hi GitGutterDelete                  guifg=#ff5252 ctermfg=203  guibg=#2e3c44 ctermbg=236
   hi link htmlArg Statement
   hi link htmlEndTag Type
   hi link htmlTag Tag
