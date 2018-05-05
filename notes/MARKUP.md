@@ -1,8 +1,6 @@
-#
+# Color Categories
 
-## Color Categories
-
-### Light
+## Light
 
 Comment      : 78909C BlueGrey400       : ordinary comments
 Debug        : D500F9 PurpleA400        : debugging, error checking
@@ -23,7 +21,7 @@ Type         : 00838F Teal800           : preset classes and types
 Type2        : 0097A7 Teal700           : ...
 Variable     : FF3D00 DeepOrangeA400    : not really sure
 
-### Dark
+## Dark
 
 Comment      : 78909C BlueGrey400            : ordinary comments
 Debug        : D373E3 PurpleA100 - 10val     : debugging, error checking
