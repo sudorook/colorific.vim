@@ -162,8 +162,8 @@ hi Question         guifg=fg
 if s:style == "light"
   " Default groups
   hi Boolean                          guifg=#00b8d4 ctermfg=38
-  hi Comment                          guifg=#78909c ctermfg=244
   hi Character                        guifg=#039be5 ctermfg=39
+  hi Comment                          guifg=#78909c ctermfg=244
   hi Conditional                      guifg=#ef6c00 ctermfg=202
   hi Constant                         guifg=#00b8d4 ctermfg=38
   hi Debug                            guifg=#d500f9 ctermfg=165
@@ -225,8 +225,8 @@ if s:style == "light"
 else
   " Default groups
   hi Boolean                          guifg=#16e6e6 ctermfg=14
-  hi Comment                          guifg=#78909c ctermfg=244
   hi Character                        guifg=#73c2e6 ctermfg=117
+  hi Comment                          guifg=#78909c ctermfg=244
   hi Conditional                      guifg=#f29f24 ctermfg=214
   hi Constant                         guifg=#16e6e6 ctermfg=14
   hi Debug                            guifg=#d373e3 ctermfg=117
