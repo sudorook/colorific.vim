@@ -91,7 +91,7 @@ let s:normal_items = [
   \  "javaScriptBraces", "javaScriptNumber", "Keyword", "Label", "LineNr",
   \  "Macro", "markdownCode", "markdownUrl", "markdownUrlTitle", "ModeMsg",
   \  "MoreMsg", "NERDTreeDirSlash", "NERDTreeExecFile", "NonText", "Number",
-  \  "Pmenu", "PmenuSbar", "PmenuSel", "PmenuThumb", "PreProc", "PreProc",
+  \  "Pmenu", "PmenuSbar", "PmenuSel", "PmenuThumb", "PreCondit", "PreProc",
   \  "Question", "Repeat", "sassFor", "sassMixin", "sassMixinName",
   \  "sassMixing", "sassWarn", "Search", "shFunctionKey", "shLoop",
   \  "SignColumn", "Special", "SpecialChar", "SpecialComment", "SpecialKey",
