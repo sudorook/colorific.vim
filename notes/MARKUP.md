@@ -133,6 +133,3 @@ Variable     : FF6E40 DeepOrangeA200         : not really sure
  | shFunctionKey               | Keyword          | 
  | shLoop                      | Loops            | 
  | shShellVariables            |                  | 
-
-\* Custom unique color
-
