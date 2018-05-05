@@ -254,10 +254,10 @@ else
   " Overrides
   hi link cssBraces Delimiter
   hi link cssColor Number
-  hi GitGutterAdd                     guifg=#69f0ae ctermfg=85   guibg=#2e3c44 ctermbg=236
-  hi GitGutterChange                  guifg=#ffff00 ctermfg=11   guibg=#2e3c44 ctermbg=236
-  hi GitGutterChangeDelete            guifg=#ffab40 ctermfg=215  guibg=#2e3c44 ctermbg=236
-  hi GitGutterDelete                  guifg=#ff5252 ctermfg=203  guibg=#2e3c44 ctermbg=236
+  hi GitGutterAdd                     guifg=#00e676 ctermfg=85   guibg=#2e3c44 ctermbg=236
+  hi GitGutterChange                  guifg=#ffea00 ctermfg=11   guibg=#2e3c44 ctermbg=236
+  hi GitGutterChangeDelete            guifg=#ff9100 ctermfg=215  guibg=#2e3c44 ctermbg=236
+  hi GitGutterDelete                  guifg=#ff1744 ctermfg=203  guibg=#2e3c44 ctermbg=236
   hi link htmlArg Statement
   hi link htmlEndTag Type
   hi link htmlTag Tag
@@ -268,7 +268,7 @@ else
   hi link markdownUrl String
   hi link markdownUrlTitle Special
   hi link NERDTreeDirSlash Normal
-  hi NERDTreeExecFile                 guifg=#69f0ae ctermfg=85
+  hi NERDTreeExecFile                 guifg=#00e676 ctermfg=85
   hi link sassFor Repeat
   hi link sassMixin Include
   hi link sassMixinName String
