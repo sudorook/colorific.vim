@@ -2,6 +2,27 @@
 
 ## Color Categories
 
+### Light
+
+Comment      : 78909C BlueGrey400         : ordinary comments
+Debug        : D500F9 PurpleA400          : debugging, error checking
+Delimiter    : 7E57C2 DeepPurple400       : braces, brackets, delimiters
+EOF          : 303F9F Indigo400           : end of buffer/file styling
+FixedValue   : 00B8D4 CyanA700            : booleans/NULL/stderr/symbols
+IfElse       : FF6D00 OrangeA700          : if/else/switch
+Include      : FF4081 PinkA200            : load libraries and modules
+Loops        : FF6D00 OrangeA700          : for/while
+Keyword      : 00A143 GreenA700 - 15value : words with special meanings
+Method       : F9A825 Amber500 - 20value  : functions/method names
+Number       : E53935 Red600              : numbers, ints, floats, hex codes
+Preprocessor : 3F51B5 Indigo500           : c macros and defines
+Special      : 0027BD LightBlue800        : special characters and char codes
+String       : 039BE5 LightBlue600        : strings and ordinary chars
+Title        : 2196F3 Blue500             : titles in text files
+Type         : 00838F Teal800             : preset classes and types
+Type2        : 0097A7 Teal700             : ...
+Variable     : FF3D00 DeepOrangeA400      : not really sure
+
 ### Dark
 
 Comment      : 78909C BlueGrey400            : ordinary comments
