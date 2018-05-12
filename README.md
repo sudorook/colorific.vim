@@ -12,15 +12,17 @@ termguicolors` in your vimrc.
 Note that the theme doesn't override the system background color, so it may
 look odd in some themes. UI elements (Folds, FoldColumns, StatusLines, etc.)
 use BlueGrey colors from Google's color palette, so colorific will look best
-with themes that use those colors, like
-[adapta](https://github.com/adapta-project/adapta-gtk-theme) for example.
+with system themes that use those colors, such as
+[adapta](https://github.com/adapta-project/adapta-gtk-theme).
 
-Why material colors? Because when you try to find good colors for syntax
-highlighting out of all the colors available, it helps to have a starting
-point.
+Syntax highlighting uses material colors that have been tweaked to lower the
+saturation and brightness. Why material colors? Because when you try to find
+good highlighting colors out of all the colors available, it helps to have a
+starting point.
 
-Another point worth noting is that the theme overrides some of the defaults for
-various languages so that syntax highlighting is more consistent across them.
+Another point worth noting is that the theme overrides some of the highlighter
+defaults for various languages so that appearance is more consistent across
+them.
 
 
 ## Installation
@@ -42,7 +44,7 @@ colo colorific
 set background=dark
 ```
 
-Use `set background=light` if you use a light system theme.
+Use `set background=light` instead if you use a light system theme.
 
 If you are using airline, load the theme by adding to your vimrc:
 ```
