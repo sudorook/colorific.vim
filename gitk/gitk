@@ -1,0 +1,32 @@
+set uicolor #37474f
+set want_ttk 0
+set bgcolor #263238
+set fgcolor #eceff1
+set uifgcolor #eceff1
+set uifgdisabledcolor #6272a4
+set colors {#00d96f #e34f4c #73c2e6 #ff79c6 #f8f8f8 #ffb86c #ffb86c}
+set diffcolors {#e34f4c #00d96f #73c2e6}
+set mergecolors {#e34f4c #73c2e6 #00d96f #73c2e6 #ffb86c #8be9fd #ff79c6 #f1fa8c #8be9fd #ff79c6 #8be9fd #ffb86c #8be9fd #00d96f #ffb86c #ff79c6}
+set markbgcolor #263238
+set selectbgcolor #37474f
+set foundbgcolor #f1fa8c
+set currentsearchhitbgcolor #ffb86c
+set headbgcolor #00d96f
+set headfgcolor black
+set headoutlinecolor #eceff1
+set remotebgcolor #ffb86c
+set tagbgcolor #f1fa8c
+set tagfgcolor black
+set tagoutlinecolor #eceff1
+set reflinecolor #eceff1
+set filesepbgcolor #37474f
+set filesepfgcolor #eceff1
+set linehoverbgcolor #f1fa8c
+set linehoverfgcolor black
+set linehoveroutlinecolor #eceff1
+set mainheadcirclecolor #f1fa8c
+set workingfilescirclecolor #e34f4c
+set indexcirclecolor #00d96f
+set circlecolors {#263238 #73c2e6 #37474f #73c2e6 #73c2e6}
+set linkfgcolor #73c2e6
+set circleoutlinecolor #37474f
