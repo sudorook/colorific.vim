@@ -1,3 +1,20 @@
+set mainfont {{Noto Sans} 12}
+set textfont {{DejaVu Sans Mono} 13}
+set tabstop 8
+set findmergefiles 0
+set maxgraphpct 50
+set maxwidth 16
+set cmitmode patch
+set wrapcomment none
+set autoselect 1
+set autosellen 40
+set showneartags 1
+set maxrefs 20
+set visiblerefs {"master"}
+set hideremotes 0
+set showlocalchanges 1
+set datetimeformat {%Y-%m-%d %H:%M:%S}
+set limitdiffs 1
 set uicolor #37474f
 set want_ttk 0
 set bgcolor #263238
@@ -8,9 +25,11 @@ set colors {#00d96f #e34f4c #73c2e6 #ff79c6 #f8f8f8 #ffb86c #ffb86c}
 set diffcolors {#e34f4c #00d96f #73c2e6}
 set mergecolors {#e34f4c #73c2e6 #00d96f #73c2e6 #ffb86c #8be9fd #ff79c6 #f1fa8c #8be9fd #ff79c6 #8be9fd #ffb86c #8be9fd #00d96f #ffb86c #ff79c6}
 set markbgcolor #263238
+set diffcontext 3
 set selectbgcolor #37474f
 set foundbgcolor #f1fa8c
 set currentsearchhitbgcolor #ffb86c
+set perfile_attrs 0
 set headbgcolor #00d96f
 set headfgcolor black
 set headoutlinecolor #eceff1
