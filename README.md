@@ -29,11 +29,11 @@ them.
 
 ```
 git clone https://github.com/sudorook/colorific.vim colorific.vim
-mkdir -p ${HOME}/.vim/colors ${HOME}/.vim/autoload/airline/themes
-cp -f colorific.vim/colors/colorific.vim ${HOME}/.vim/colors/
-cp -f autoload/airline/themes/colorific.vim ${HOME}/.vim/autoload/airline/themes/
-rm -rf colorific.vim/
+cd colorific.vim
+./install.sh
 ```
+
+To install the theme as root, run `sudo ./install.sh` instead.
 
 
 ## Configuration
@@ -50,3 +50,6 @@ If you are using airline, load the theme by adding to your vimrc:
 ```
 let g:airline_theme='colorific'
 ```
+
+Note that if vim is invoked as root, colorific needs to be loaded in
+/root/.vimrc.
