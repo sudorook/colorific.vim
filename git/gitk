@@ -18,8 +18,8 @@ set limitdiffs 1
 set uicolor #37474f
 set want_ttk 0
 set bgcolor #263238
-set fgcolor #eceff1
-set uifgcolor #eceff1
+set fgcolor #cfd8dc
+set uifgcolor #cfd8dc
 set uifgdisabledcolor #6272a4
 set colors {#00d96f #e34f4c #73c2e6 #ff79c6 #f8f8f8 #ffb86c #ffb86c}
 set diffcolors {#e34f4c #00d96f #73c2e6}
@@ -32,17 +32,17 @@ set currentsearchhitbgcolor #ffb86c
 set perfile_attrs 0
 set headbgcolor #00d96f
 set headfgcolor black
-set headoutlinecolor #eceff1
+set headoutlinecolor #cfd8dc
 set remotebgcolor #ffb86c
 set tagbgcolor #f1fa8c
 set tagfgcolor black
-set tagoutlinecolor #eceff1
-set reflinecolor #eceff1
+set tagoutlinecolor #cfd8dc
+set reflinecolor #cfd8dc
 set filesepbgcolor #37474f
-set filesepfgcolor #eceff1
+set filesepfgcolor #cfd8dc
 set linehoverbgcolor #f1fa8c
 set linehoverfgcolor black
-set linehoveroutlinecolor #eceff1
+set linehoveroutlinecolor #cfd8dc
 set mainheadcirclecolor #f1fa8c
 set workingfilescirclecolor #e34f4c
 set indexcirclecolor #00d96f
