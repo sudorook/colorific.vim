@@ -54,3 +54,21 @@ let g:airline_theme='colorific'
 
 Note that if vim is invoked as root, colorific needs to be loaded in
 /root/.vimrc.
+
+
+## Examples
+
+|            | Light                              | Dark                              |
+| :---:      | :---:                              | :---:                             |
+| CSS        | ![CSS](assets/css-light.png)       | ![CSS](assets/css-dark.png)       |
+| HTML       | ![HTML](assets/html-light.png)     | ![HTML](assets/html-dark.png)     |
+| XML        | ![XML](assets/xml-light.png)       | ![XML](assets/xml-dark.png)       |
+| Ruby       | ![Ruby](assets/ruby-light.png)     | ![Ruby](assets/ruby-dark.png)     |
+| Python     | ![Python](assets/python-light.png) | ![Python](assets/python-dark.png) |
+| C/C++      | ![C++](assets/cpp-light.png)       | ![C++](assets/cpp-dark.png)       |
+| R          | ![R](assets/r-light.png)           | ![R](assets/r-dark.png)           |
+| Julia      | ![Julia](assets/julia-light.png)   | ![Julia](assets/julia-dark.png)   |
+| Perl       | ![Perl](assets/perl-light.png)     | ![Perl](assets/perl-dark.png)     |
+| Javascript | ![Javascript](assets/js-light.png) | ![Javascript](assets/js-dark.png) |
+| Bash       | ![Bash](assets/bash-light.png)     | ![Bash](assets/bash-dark.png)     |
+| LaTeX      | ![LaTeX](assets/latex-light.png)   | ![LaTeX](assets/latex-dark.png)   |
