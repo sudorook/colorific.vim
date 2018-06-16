@@ -42,6 +42,7 @@ Add the following lines to your vimrc:
 ```
 colo colorific
 set background=dark
+syntax on
 ```
 
 Use `set background=light` instead if you use a light system theme.
