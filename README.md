@@ -1,7 +1,7 @@
 # colorific.vim
 
-Vim theme (dark and light) to produce readable diffs (unlike the default) and
-clear syntax highlighting without using overly bright colors that make your
+Vim theme (dark and light) built to produce readable diffs (unlike the default)
+and clear syntax highlighting without using overly bright colors that make your
 eyes bleed after prolonged use.
 
 The theme comes with two color sets for 256-color (cterm) and truecolor
