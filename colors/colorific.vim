@@ -303,9 +303,9 @@ if s:style == "light"
   hi VisualNOS      guifg=fg                   guibg=NONE
 else
   hi Error          guifg=#ff8787 ctermfg=210  guibg=#870000 ctermbg=88
-  hi IncSearch      guifg=#263238 ctermfg=236  guibg=#5fd7ff ctermbg=81
+  hi IncSearch      guifg=#263238 ctermfg=235  guibg=#5fd7ff ctermbg=81
   hi MatchParen     guifg=#eceff1 ctermfg=255  guibg=#5e35b1 ctermbg=61
-  hi Search         guifg=#263238 ctermfg=236  guibg=#d78700 ctermbg=172
+  hi Search         guifg=#263238 ctermfg=235  guibg=#d78700 ctermbg=172
   hi Todo           guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
   hi Visual         guifg=#87d7d7 ctermfg=116  guibg=#294040 ctermbg=23
                                                      "^^^^^^ not 8bit
@@ -469,7 +469,7 @@ if s:style == "light"
   hi Ignore         guifg=#eceff1 ctermfg=255
                           "^^^^^^ not 8bit
 else
-  hi Ignore         guifg=#263238 ctermfg=236
+  hi Ignore         guifg=#263238 ctermfg=235
                           "^^^^^^ not 8bit
 endif
 hi Underlined       guifg=fg
