@@ -13,7 +13,7 @@ Note that the theme doesn't override the system background color, so it may
 look odd in some themes. UI elements (Folds, FoldColumns, StatusLines, etc.)
 use BlueGrey colors from Google's color palette, so colorific will look best
 with system themes that use those colors, such as
-[adapta](https://github.com/adapta-project/adapta-gtk-theme).
+[Adapta](https://github.com/adapta-project/adapta-gtk-theme).
 
 Syntax highlighting uses material colors that have been tweaked to lower the
 saturation and brightness. Why material colors? Because when you try to find
