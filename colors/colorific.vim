@@ -379,7 +379,7 @@ else
   hi CursorColumn   guifg=NONE                 guibg=#2e3c44 ctermbg=236
                                                      "^^^^^^ not 8bit
   hi CursorIM       guifg=#263238 ctermfg=235  guibg=#87afd7 ctermbg=110
-                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
+                          "^^^^^^ not 8bit
   hi CursorLine     guifg=NONE                 guibg=#2e3c44 ctermbg=236
                                                      "^^^^^^ not 8bit
   hi CursorLineNr   guifg=#607d8b ctermfg=244  guibg=#2e3c44 ctermbg=236
