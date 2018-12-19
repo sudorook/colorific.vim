@@ -171,7 +171,7 @@ if s:style == "light"
   hi Delimiter                        guifg=#7e57c2 ctermfg=97
   hi Directory                        guifg=#2196f3 ctermfg=33
   hi Exception                        guifg=#d500f9 ctermfg=165
-  hi Float                            guifg=#E53935 ctermfg=203
+  hi Float                            guifg=#e53935 ctermfg=203
   hi Function                         guifg=#cc8a06 ctermfg=172
   hi Identifier                       guifg=#ff3d00 ctermfg=202
   hi Include                          guifg=#ff4081 ctermfg=204
@@ -179,7 +179,7 @@ if s:style == "light"
   hi Label                            guifg=#ff3d00 ctermfg=202
   hi Macro                            guifg=#3f51b5 ctermfg=61
   hi NonText                          guifg=#303f9f ctermfg=60
-  hi Number                           guifg=#E53935 ctermfg=203
+  hi Number                           guifg=#e53935 ctermfg=203
   hi Operator                         guifg=#cc8a06 ctermfg=172
   hi PreCondit                        guifg=#3f51b5 ctermfg=61
   hi PreProc                          guifg=#3f51b5 ctermfg=61
