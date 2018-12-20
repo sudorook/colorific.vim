@@ -429,14 +429,14 @@ if s:style == "light"
   hi DiffText       guifg=#d75f00 ctermfg=166  guibg=#f2f2ae ctermbg=187
                                                      "^^^^^^ not 8bit
 else
-  hi DiffAdd                                   guibg=#376e49 ctermbg=65
+  hi DiffAdd                                   guibg=#2e543b ctermbg=65
                                                      "^^^^^^ not 8bit
-  hi DiffChange                                guibg=#7a7a3d ctermbg=101
+  hi DiffChange                                guibg=#616134 ctermbg=101
                                                      "^^^^^^ not 8bit
-  hi DiffDelete                                guibg=#7a3d3d ctermbg=95
+  hi DiffDelete                                guibg=#613434 ctermbg=95
                                                      "^^^^^^ not 8bit
-  hi DiffText       guifg=#ffffaf ctermfg=229  guibg=#7a7a3d ctermbg=101
-                                                     "^^^^^^ not 8bit
+  hi DiffText       guifg=#f2f2a6 ctermfg=229  guibg=#616134 ctermbg=101
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
 endif
 
 
