@@ -1,6 +1,41 @@
 # UI Colors
 
-## Palette
+## Grey Palette
+
+ 50 #fafafa
+100 #f5f5f5
+200 #eeeeee
+300 #e0e0e0
+400 #bdbdbd
+500 #9e9e9e
+600 #757575
+700 #616161
+800 #424242
+900 #212121
+
+
+## Grey Palette (match BluGrey value)
+
+ 50 #eceff1 -> #f1f1f1
+100 #cfd8dc -> #dcdcdc
+200 #b0bec5 -> #c5c5c5
+300 #90a4ae -> #aeaeae
+400 #78909c -> #9c9c9c
+500 #607d8b -> #8b8b8b
+600 #546e7a -> #7a7a7a
+700 #455a64 -> #646464
+800 #37474f -> #4f4f4f
+900 #263238 -> #383838
+
+xxx #c0cbd0 -> #d0d0d0
+xxx #e3e8eb -> #ebebeb
+xxx #6e8895 -> #959595
+xxx #87875f -> #878787
+xxx #2e3c44 -> #444444
+xxx #b0b3c5 -> #c5c5c5
+
+
+## BluGrey Palette
 
  50 #eceff1
 100 #cfd8dc
