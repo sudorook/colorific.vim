@@ -1,0 +1,52 @@
+set mainfont {Roboto 11}
+set textfont {{Ubuntu Mono} 14}
+set uifont {Roboto 11 bold}
+set tabstop 8
+set findmergefiles 0
+set maxgraphpct 50
+set maxwidth 16
+set cmitmode patch
+set wrapcomment none
+set autoselect 1
+set autosellen 40
+set showneartags 1
+set maxrefs 20
+set visiblerefs {"master"}
+set hideremotes 0
+set showlocalchanges 1
+set datetimeformat {%Y-%m-%d %H:%M:%S}
+set limitdiffs 1
+set uicolor #eceff1
+set want_ttk 0
+set bgcolor #ffffff
+set fgcolor #37343f
+set uifgcolor #37343f
+set uifgdisabledcolor #6272a4
+set colors {#00d96f #e34f4c #73c2e6 #ff79c6 #f8f8f8 #ffb86c #ffb86c}
+set diffcolors {#e34f4c #00d96f #73c2e6}
+set mergecolors {#e34f4c #73c2e6 #00d96f #73c2e6 #ffb86c #8be9fd #ff79c6 #f1fa8c #8be9fd #ff79c6 #8be9fd #ffb86c #8be9fd #00d96f #ffb86c #ff79c6}
+set markbgcolor #ffffff
+set diffcontext 3
+set selectbgcolor #eceff1
+set foundbgcolor #f1fa8c
+set currentsearchhitbgcolor #ffb86c
+set perfile_attrs 0
+set headbgcolor #00d96f
+set headfgcolor black
+set headoutlinecolor #37343f
+set remotebgcolor #ffb86c
+set tagbgcolor #f1fa8c
+set tagfgcolor black
+set tagoutlinecolor #37343f
+set reflinecolor #37343f
+set filesepbgcolor #eceff1
+set filesepfgcolor #37343f
+set linehoverbgcolor #f1fa8c
+set linehoverfgcolor black
+set linehoveroutlinecolor #37343f
+set mainheadcirclecolor #f1fa8c
+set workingfilescirclecolor #e34f4c
+set indexcirclecolor #00d96f
+set circlecolors {#ffffff #73c2e6 #eceff1 #73c2e6 #73c2e6}
+set linkfgcolor #73c2e6
+set circleoutlinecolor #eceff1
