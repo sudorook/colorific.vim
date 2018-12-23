@@ -27,7 +27,7 @@ set diffcolors {#e34f4c #00d96f #73c2e6}
 set mergecolors {#e34f4c #73c2e6 #00d96f #73c2e6 #ffb86c #8be9fd #ff79c6 #f1fa8c #8be9fd #ff79c6 #8be9fd #ffb86c #8be9fd #00d96f #ffb86c #ff79c6}
 set markbgcolor #111111
 set diffcontext 3
-set selectbgcolor #212121
+set selectbgcolor #2e2e2e
 set foundbgcolor #f1fa8c
 set currentsearchhitbgcolor #ffb86c
 set perfile_attrs 0
