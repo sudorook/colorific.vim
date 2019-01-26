@@ -10,3 +10,7 @@ cp -vf autoload/airline/themes/* ${vimdir}/autoload/airline/themes/
 gitdir=${HOME}/.config/git
 mkdir -vp ${gitdir}
 cp -vf git/gitk-* ${gitdir}/
+
+tmuxdir=${HOME}/.tmux
+mkdir -vp ${tmuxdir}
+cp -vf tmux/* ${tmuxdir}/
