@@ -1,0 +1,73 @@
+#
+# Colorific - Tmux Theme
+#
+# Forked from Powerline Gray by Jim Myhrberg <contact@jimeh.me>.
+#
+# Requires terminal to be using a powerline compatible font, find one here:
+# https://github.com/Lokaltog/powerline-fonts
+#
+
+# Status update interval
+set -g status-interval 1
+
+# Basic status bar colors
+set -g status-fg "#cfd8dc"
+set -g status-bg "#2e3c44"
+
+# Left side of status bar
+set -g status-left-bg "#2e3c44"
+set -g status-left-fg "#b0b3c5"
+set -g status-left-length 40
+set -g status-left "#[fg=#212121,bg=#b0bec5,bold] #S #[fg=#b0bec5,bg=#435761,bold]#[fg=#b0b3c5,bg=#435761] #(whoami) #[fg=#435761,bg=#37474f]#[fg=#b0b3c5,bg=#37474f] #I:#P #[fg=#37474f,bg=#2e3c44,nobold]"
+
+# Right side of status bar
+set -g status-right-bg "#2e3c44"
+set -g status-right-fg "#b0b3c5"
+set -g status-right-length 150
+set -g status-right "#[fg=#37474f,bg=#2e3c44,nobold]#[fg=#b0b3c5,bg=#37474f] %H:%M:%S #[fg=#435761,bg=#37474f]#[fg=#b0b3c5,bg=#435761]  %d-%b-%y #[fg=#b0bec5,bg=#435761,bold]#[fg=#212121,bg=#b0bec5,bold] #H "
+
+# Window status
+set -g window-status-format "  #I:#W#F  "
+set -g window-status-current-format "#[fg=#2e3c44,bg=#37474f]#[fg=#b0b3c5,bg=#37474f,nobold] #I:#W#F #[fg=#2e3c44,bg=#37474f,nobold]"
+
+# Current window status
+set -g window-status-current-bg "#2e3c44"
+set -g window-status-current-fg "#b0b3c5"
+
+# Window with activity status
+set -g window-status-activity-bg "#b0b3c5" # fg and bg are flipped here due to
+set -g window-status-activity-fg "#2e3c44" # a bug in tmux
+
+# Window separator
+set -g window-status-separator ""
+
+# Window status alignment
+set -g status-justify centre
+
+# Pane border
+set -g pane-border-bg default
+set -g pane-border-fg "#37474f"
+
+# Active pane border
+set -g pane-active-border-bg default
+set -g pane-active-border-fg "#607d8b"
+
+# Pane number indicator
+set -g display-panes-colour "#2e3c44"
+set -g display-panes-active-colour "#b0b3c5"
+
+# Clock mode
+set -g clock-mode-colour "#cfd8dc"
+set -g clock-mode-style 24
+
+# Message
+set -g message-bg "#2e3c44"
+set -g message-fg "#b0b3c5"
+
+# Command message
+set -g message-command-bg "#37474f"
+set -g message-command-fg "#b0b3c5"
+
+# Mode
+set -g mode-bg "#37474f"
+set -g mode-fg "#cfd8dc"
