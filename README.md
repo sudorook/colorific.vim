@@ -85,12 +85,13 @@ Note that if vim is invoked as root, colorific needs to be loaded in
 
 ### gitk
 
-Stylings for gitk are available in the gitk/ directory. To set gitk to use one
-(Linux only?), copy the file for the desired theme (e.g. gitk-dark2) to a file
-called ~/.config/git/gitk. Here, you are renaming the gitk-dark2 file to gitk.
+Stylings for gitk are available in the gitk/ directory. To set a gitk theme,
+copy the file for the desired theme (e.g. gitk-dark2) to a file called
+~/.config/git/gitk. The file needs to be renamed as 'gitk.' Symlinks would
+work, too.
 
 Note that the `install.sh` script will install all four variants with names
-unchanged to ~/.config/git/.
+unchanged to ~/.config/git/. To pick one, simply rename/symlink the file.
 
 
 ### tmux
@@ -99,10 +100,11 @@ Themes for tmux are available in the tmux/ directory. To use them, edit your
 .tmux.conf file to have the line:
 
 ```
-source-file <path>/<to>/dark2.tmuxtheme
+source-file <path>/<to>/<theme>.tmuxtheme
 ```
 
-Change the filename in the path to the desired theme variant.
+where `<theme>` refers to one of the available variants (light2, dark2, dark,
+or light).
 
 Note that the `install.sh` script will copy the themes in tmux/ to the ~/.tmux/
-directory.
+directory. No files need to be renamed for tmux.
