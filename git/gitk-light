@@ -1,5 +1,5 @@
 set mainfont {Roboto 11}
-set textfont {{Ubuntu Mono} 14}
+set textfont {{Ubuntu Mono} 12}
 set uifont {Roboto 11 bold}
 set tabstop 8
 set findmergefiles 0
