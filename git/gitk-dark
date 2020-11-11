@@ -23,7 +23,7 @@ set fgcolor #cfd8dc
 set uifgcolor #cfd8dc
 set uifgdisabledcolor #6272a4
 set colors {#00d96f #e34f4c #73c2e6 #ff79c6 #f8f8f8 #ffb86c #ffb86c}
-set diffcolors {#e34f4c #00d96f #73c2e6}
+set diffcolors {{#cfd8dc} #cfd8dc #73c2e6}
 set mergecolors {#e34f4c #73c2e6 #00d96f #73c2e6 #ffb86c #8be9fd #ff79c6 #f1fa8c #8be9fd #ff79c6 #8be9fd #ffb86c #8be9fd #00d96f #ffb86c #ff79c6}
 set markbgcolor #263238
 set diffcontext 3
@@ -50,3 +50,4 @@ set indexcirclecolor #00d96f
 set circlecolors {#263238 #73c2e6 #37474f #73c2e6 #73c2e6}
 set linkfgcolor #73c2e6
 set circleoutlinecolor #37474f
+set diffbgcolors {{#7a3d3d} #376e49}
