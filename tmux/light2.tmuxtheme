@@ -15,14 +15,10 @@ set -g status-fg "#2e2e2e"
 set -g status-bg "#ededed"
 
 # Left side of status bar
-set -g status-left-bg "#ededed"
-set -g status-left-fg "#2e2e2e"
 set -g status-left-length 40
 set -g status-left "#[fg=#f0f0f0,bg=#545454,bold] #S #[fg=#545454,bg=#d9d9d9,bold]#[fg=#2e2e2e,bg=#d9d9d9] #(whoami) #[fg=#d9d9d9,bg=#e3e3e3]#[fg=#2e2e2e,bg=#e3e3e3] #I:#P #[fg=#e3e3e3,bg=#ededed,nobold]"
 
 # Right side of status bar
-set -g status-right-bg "#ededed"
-set -g status-right-fg "#2e2e2e"
 set -g status-right-length 150
 set -g status-right "#[fg=#e3e3e3,bg=#ededed,nobold]#[fg=#2e2e2e,bg=#e3e3e3] %H:%M:%S #[fg=#d9d9d9,bg=#e3e3e3]#[fg=#2e2e2e,bg=#d9d9d9]  %d-%b-%y #[fg=#545454,bg=#d9d9d9,bold]#[fg=#f0f0f0,bg=#545454,bold] #h "
 
@@ -30,27 +26,11 @@ set -g status-right "#[fg=#e3e3e3,bg=#ededed,nobold]#[fg=#2e2e2e,bg=#e3e3e3] 
 set -g window-status-format "  #I:#W#F  "
 set -g window-status-current-format "#[fg=#ededed,bg=#e3e3e3]#[fg=#2e2e2e,bg=#e3e3e3,nobold] #I:#W#F #[fg=#ededed,bg=#e3e3e3,nobold]"
 
-# Current window status
-set -g window-status-current-bg "#ededed"
-set -g window-status-current-fg "#2e2e2e"
-
-# Window with activity status
-set -g window-status-activity-bg "#2e2e2e" # fg and bg are flipped here due to
-set -g window-status-activity-fg "#ededed" # a bug in tmux
-
 # Window separator
 set -g window-status-separator ""
 
 # Window status alignment
 set -g status-justify centre
-
-# Pane border
-set -g pane-border-bg default
-set -g pane-border-fg "#e3e3e3"
-
-# Active pane border
-set -g pane-active-border-bg default
-set -g pane-active-border-fg "#949494"
 
 # Pane number indicator
 set -g display-panes-colour "#ededed"
@@ -59,15 +39,3 @@ set -g display-panes-active-colour "#f0f0f0"
 # Clock mode
 set -g clock-mode-colour "#2e2e2e"
 set -g clock-mode-style 24
-
-# Message
-set -g message-bg "#f0f0f0"
-set -g message-fg "#2e2e2e"
-
-# Command message
-set -g message-command-bg "#e3e3e3"
-set -g message-command-fg "#2e2e2e"
-
-# Mode
-set -g mode-bg "#e3e3e3"
-set -g mode-fg "#2e2e2e"
