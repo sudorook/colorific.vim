@@ -1,16 +1,15 @@
 #! /bin/bash
 set -eu
 
-vimdir=${HOME}/.vim
+VIMDIR=${HOME}/.vim
+mkdir -vp "${VIMDIR}/colors" "${VIMDIR}/autoload/airline/themes"
+cp -vf colors/* "${VIMDIR}/colors/"
+cp -vf autoload/airline/themes/* "${VIMDIR}/autoload/airline/themes/"
 
-mkdir -vp ${vimdir}/colors ${vimdir}/autoload/airline/themes
-cp -vf colors/* ${vimdir}/colors/
-cp -vf autoload/airline/themes/* ${vimdir}/autoload/airline/themes/
+GITDIR=${HOME}/.config/git
+mkdir -vp "${GITDIR}"
+cp -vf git/gitk-* "${GITDIR}/"
 
-gitdir=${HOME}/.config/git
-mkdir -vp ${gitdir}
-cp -vf git/gitk-* ${gitdir}/
-
-tmuxdir=${HOME}/.tmux
-mkdir -vp ${tmuxdir}
-cp -vf tmux/* ${tmuxdir}/
+TMUXDIR=${HOME}/.tmux
+mkdir -vp "${TMUXDIR}"
+cp -vf tmux/* "${TMUXDIR}/"
