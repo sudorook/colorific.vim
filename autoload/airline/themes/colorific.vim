@@ -8,9 +8,7 @@ function! airline#themes#colorific#refresh()
     let g:airline#themes#colorific#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
     let modified_group = airline#themes#get_highlight('Statement')
-    let g:airline#themes#colorific#palette.normal_modified = {
-                \ 'airline_c': [modified_group[0], '', modified_group[2], '', '']
-                \ }
+    let g:airline#themes#colorific#palette.normal_modified = { 'airline_c' : [modified_group[0], '', modified_group[2], '', ''] }
 
     let warning_group = airline#themes#get_highlight('DiffChange')
     let g:airline#themes#colorific#palette.normal.airline_warning = warning_group
@@ -52,13 +50,9 @@ function! airline#themes#colorific#refresh()
 
     let s:IA = airline#themes#get_highlight('StatusLineNC')
     let g:airline#themes#colorific#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
-    let g:airline#themes#colorific#palette.inactive_modified = {
-                \ 'airline_c': [ modified_group[0], '', modified_group[2], '', '' ]
-                \ }
+    let g:airline#themes#colorific#palette.inactive_modified = { 'airline_c' : [modified_group[0], '', modified_group[2], '', ''] }
 
-    let g:airline#themes#colorific#palette.accents = {
-                \ 'red': airline#themes#get_highlight('Constant'),
-                \ }
+    let g:airline#themes#colorific#palette.accents = { 'red' : airline#themes#get_highlight('Constant'), }
 
     " Extra tabline colors
     let s:TS = airline#themes#get_highlight('TabLineSel')
