@@ -1,26 +1,115 @@
 #! /bin/bash
 set -eu
 
-infile="${1}"
-outfile="new_${1}"
+PALETTE1=(
+  eceff1
+  cfd8dc # fold and 1st layer
+  b0bec5
+  90a4ae
+  78909c # Comment color
+  607d8b
+  546e7a
+  37474f # dark fold and 1st layer
+  263238
+  e3e8eb # 2nd layer
+  b0b3c5
+  c0cbd0
+  2e3c44 # dark 2nd layer
+  6e8895 # vsplit separator
+)
 
-cp "${infile}" "${outfile}"
+PALETTE2=(
+  f0f0f0
+  e3e3e3
+  d0d0d0
+  bdbdbd
+  949494
+  545454
+  474747
+  2e2e2e
+  212121
+  ededed
+  c6c6c6
+  e4e4e4
+  1c1c1c
+  5c5c5c
+)
 
-sed -i "s/colorific/colorific2/g" "${outfile}"
+#
+# Functions
+#
 
-# Manual
-sed -i "s/#eceff1/#f0f0f0/g" "${outfile}"
-sed -i "s/#cfd8dc/#e3e3e3/g" "${outfile}" # fold and 1st layer
-sed -i "s/#b0bec5/#d0d0d0/g" "${outfile}"
-sed -i "s/#90a4ae/#bdbdbd/g" "${outfile}"
-sed -i "s/#78909c/#949494/g" "${outfile}" # Comment color
-sed -i "s/#607d8b/#545454/g" "${outfile}"
-sed -i "s/#546e7a/#474747/g" "${outfile}"
-sed -i "s/#37474f/#2e2e2e/g" "${outfile}" # dark fold and 1st layer
-sed -i "s/#263238/#212121/g" "${outfile}"
+function set_palette {
+  local res
+  case "${1}" in
+    palette1|Palette1|PALETTE1|1)
+      res=PALETTE1
+      ;;
+    palette2|Palette2|PALETTE2|2)
+      res=PALETTE2
+      ;;
+    *)
+      exit 3
+  esac
+  echo "${res}"
+}
 
-sed -i "s/#e3e8eb/#ededed/g" "${outfile}" # 2nd layer
-sed -i "s/#b0b3c5/#c6c6c6/g" "${outfile}"
-sed -i "s/#c0cbd0/#e4e4e4/g" "${outfile}"
-sed -i "s/#2e3c44/#1c1c1c/g" "${outfile}" # dark 2nd layer
-sed -i "s/#6e8895/#5c5c5c/g" "${outfile}" # vsplit separator
+function convert_palette {
+  local i
+  local cmd="sed "
+  for i in "${!PALETTE1[@]}"; do
+    cmd="${cmd} -e \"s/\${${FROM}[${i}]}/\${${TO}[${i}]}/g\""
+  done
+  cmd="${cmd} ${INPUT@Q} > ${OUTPUT@Q}"
+  echo "${cmd}" <&2
+  eval "${cmd}"
+}
+
+
+#
+# Main
+#
+
+OPTIONS=f:t:i:
+LONGOPTIONS=from:,to:,input:
+PARSED=$(getopt -o ${OPTIONS} --long ${LONGOPTIONS} -n "$0" -- "$@")
+eval set -- "$PARSED"
+
+while [ $# -ge 1 ]; do
+  case "$1" in
+    -i|--input)
+      INPUT="${2}"
+      OUTPUT="${2%%.*}_new.${2##*.}"
+      shift 2
+      ;;
+    -f|--from)
+      FROM="$(set_palette "${2}")"
+      shift 2
+      ;;
+    -t|--to)
+      TO="$(set_palette "${2}")"
+      shift 2
+      ;;
+    --)
+      shift
+      break
+      ;;
+    *)
+      exit 3
+      ;;
+  esac
+done
+
+if ! [[ -v INPUT ]]; then
+  echo "ERROR: 'input' field '-i' unspecified. Exiting." >&2
+fi
+
+if ! [[ -v FROM ]]; then
+  echo "ERROR: 'from' field '-f' unspecified. Exiting." >&2
+fi
+
+if ! [[ -v TO ]]; then
+  echo "ERROR: 'to' field '-t' unspecified. Exiting." >&2
+fi
+
+convert_palette
