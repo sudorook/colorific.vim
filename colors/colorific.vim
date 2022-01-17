@@ -9,14 +9,14 @@
 "
 " Forked mostly from Lucius color scheme, with some of Darkburn mixed in. The
 " basic idea is to write a theme that looks better than the default,
-" especially when viewing diffs, withough overriding the system background
-" color. To do so, I had to scrap all the nifty colormap originally in Lucius.
-" I also cut out all the contrast modes.
+" especially when viewing diffs, without overriding the system background
+" color. This involved scrapping the nifty colormap originally in Lucius, and
+" the contrast modes are also absent.
 "
 " https://github.com/sudorook/colorific.vim
 "
 " To use the presets, you just need to set the color scheme first. In your
-" vimrc, you can just do this:
+" vimrc, add:
 "
 "   colorscheme colorific
 "   set background=light
