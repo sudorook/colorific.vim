@@ -461,11 +461,11 @@ elseif s:style == "dark"
   hi CursorLine     guifg=NONE                 guibg=#2e3c44 ctermbg=236
                                                      "^^^^^^ not 8bit
   hi CursorLineNr   guifg=#607d8b ctermfg=244  guibg=#2e3c44 ctermbg=236
-                          "^^^^^^ not8bit            "^^^^^^ not 8bit
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi Folded         guifg=#c0cbd0 ctermfg=250  guibg=#37474f ctermbg=237
-                          "^^^^^^ not8bit            "^^^^^^ not 8bit
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi FoldColumn     guifg=#c0cbd0 ctermfg=250  guibg=#37474f ctermbg=237
-                          "^^^^^^ not8bit            "^^^^^^ not 8bit
+                          "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi LineNr         guifg=#607d8b ctermfg=244  guibg=#2e3c44 ctermbg=236
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi Pmenu          guifg=#263238 ctermfg=235  guibg=#b0bec5 ctermbg=250
@@ -497,7 +497,7 @@ elseif s:style == "dark2"
                           "^^^^^^ not 8bit
   hi CursorLine     guifg=NONE                 guibg=#1c1c1c ctermbg=234
   hi CursorLineNr   guifg=#545454 ctermfg=240  guibg=#1c1c1c ctermbg=234
-                          "^^^^^^ not8bit
+                          "^^^^^^ not 8bit
   hi Folded         guifg=#e4e4e4 ctermfg=254  guibg=#2e2e2e ctermbg=236
                                                      "^^^^^^ not 8bit
   hi FoldColumn     guifg=#e4e4e4 ctermfg=254  guibg=#2e2e2e ctermbg=236
