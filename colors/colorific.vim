@@ -96,12 +96,12 @@ let s:normal_items = [
   \  "sassMixing", "sassWarn", "Search", "shFunctionKey", "shLoop",
   \  "SignColumn", "Special", "SpecialChar", "SpecialComment", "SpecialKey",
   \  "Statement", "StatusLineNC", "TabLine", "TabLineFill", "Tag", "Todo",
-  \  "Type", "TypeDef", "VertSplit", "Visual", "WarningMsg", "WildMenu",
+  \  "Type", "TypeDef", "Visual", "WarningMsg", "WildMenu",
   \ ]
 
 let s:bold_items = [
   \   "DiffText", "FoldColumn", "Folded", "MatchParen", "StatusLine",
-  \   "TabLineSel", "Title",
+  \   "TabLineSel", "Title", "VertSplit",
   \ ]
 
 let s:underline_items = [
