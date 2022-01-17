@@ -139,7 +139,7 @@ elseif s:style == "light2"
   hi Normal         guifg=#2e2e2e ctermfg=236
                           "^^^^^^ not 8bit
 elseif s:style == "light3"
-  hi Normal         guifg=#5c616c ctermfg=236
+  hi Normal         guifg=#5c616c ctermfg=59
                           "^^^^^^ not 8bit
 elseif s:style == "dark"
   hi Normal         guifg=#cfd8dc ctermfg=188
@@ -148,7 +148,7 @@ elseif s:style == "dark2"
   hi Normal         guifg=#e3e3e3 ctermfg=254
                           "^^^^^^ not 8bit
 elseif s:style == "dark3"
-  hi Normal         guifg=#d3dae3 ctermfg=254
+  hi Normal         guifg=#d3dae3 ctermfg=188
                           "^^^^^^ not 8bit
 endif
 
@@ -186,7 +186,7 @@ if s:style =~ "^light"
   elseif s:style == "light2"
     hi Comment                        guifg=#949494 ctermfg=246
   elseif s:style == "light3"
-    hi Comment                        guifg=#959ba6 ctermfg=246
+    hi Comment                        guifg=#959ba6 ctermfg=109
   endif
   hi Conditional                      guifg=#ef6c00 ctermfg=202
   hi Constant                         guifg=#00b8d4 ctermfg=38
@@ -238,7 +238,7 @@ if s:style =~ "^light"
     hi GitGutterAdd                   guifg=#00c853 ctermfg=41   guibg=#f5f6f7 ctermbg=255
     hi GitGutterChange                guifg=#ffab00 ctermfg=214  guibg=#f5f6f7 ctermbg=255
     hi GitGutterChangeDelete          guifg=#ff6d00 ctermfg=202  guibg=#f5f6f7 ctermbg=255
-    hi GitGutterDelete                guifg=#d50000 ctermfg=160  guibg=#f5f6f7 ctermbg=255
+    hi GitGutterDelete                guifg=#d50000 ctermfg=160  guibg=#f5f6f7 ctermbg=231
   endif
   hi link htmlArg Statement
   hi link htmlEndTag Type
@@ -267,7 +267,7 @@ elseif s:style =~ "^dark"
   elseif s:style == "dark2"
     hi Comment                        guifg=#949494 ctermfg=246
   elseif s:style == "dark3"
-    hi Comment                        guifg=#959ba6 ctermfg=246
+    hi Comment                        guifg=#959ba6 ctermfg=109
   endif
   hi Conditional                      guifg=#f29f24 ctermfg=214
   hi Constant                         guifg=#16e6e6 ctermfg=14
@@ -316,10 +316,10 @@ elseif s:style =~ "^dark"
     hi GitGutterChangeDelete          guifg=#ff9100 ctermfg=215  guibg=#1c1c1c ctermbg=234
     hi GitGutterDelete                guifg=#ff1744 ctermfg=203  guibg=#1c1c1c ctermbg=234
   elseif s:style == "dark3"
-    hi GitGutterAdd                   guifg=#00e676 ctermfg=85   guibg=#2f343f ctermbg=234
-    hi GitGutterChange                guifg=#ffea00 ctermfg=11   guibg=#2f343f ctermbg=234
-    hi GitGutterChangeDelete          guifg=#ff9100 ctermfg=215  guibg=#2f343f ctermbg=234
-    hi GitGutterDelete                guifg=#ff1744 ctermfg=203  guibg=#2f343f ctermbg=234
+    hi GitGutterAdd                   guifg=#00e676 ctermfg=85   guibg=#2f343f ctermbg=23
+    hi GitGutterChange                guifg=#ffea00 ctermfg=11   guibg=#2f343f ctermbg=23
+    hi GitGutterChangeDelete          guifg=#ff9100 ctermfg=215  guibg=#2f343f ctermbg=23
+    hi GitGutterDelete                guifg=#ff1744 ctermfg=203  guibg=#2f343f ctermbg=23
   endif
   hi link htmlArg Statement
   hi link htmlEndTag Type
@@ -366,11 +366,11 @@ elseif s:style =~ "^dark"
     hi MatchParen   guifg=#f0f0f0 ctermfg=231  guibg=#5e35b1 ctermbg=61
     hi Search       guifg=#212121 ctermfg=235  guibg=#d78700 ctermbg=172
   elseif s:style == "dark3"
-    hi IncSearch    guifg=#383c4a ctermfg=235  guibg=#5fd7ff ctermbg=81
+    hi IncSearch    guifg=#383c4a ctermfg=59   guibg=#5fd7ff ctermbg=81
                           "^^^^^^ not 8bit
     hi MatchParen   guifg=#f5f6f7 ctermfg=231  guibg=#5e35b1 ctermbg=61
                           "^^^^^^ not 8bit
-    hi Search       guifg=#383c4a ctermfg=235  guibg=#d78700 ctermbg=172
+    hi Search       guifg=#383c4a ctermfg=59   guibg=#d78700 ctermbg=172
                           "^^^^^^ not 8bit
   endif
   hi Todo           guifg=#d7d75f ctermfg=185  guibg=#5f5f00 ctermbg=58
@@ -481,39 +481,39 @@ elseif s:style == "light3"
   hi ColorColumn    guifg=NONE                 guibg=#d7d7af ctermbg=187
   hi Cursor         guifg=#f5f6f7 ctermfg=231  guibg=#5f87af ctermbg=67
                           "^^^^^^ not 8bit
-  hi CursorColumn   guifg=NONE                 guibg=#f5f6f7 ctermbg=255
+  hi CursorColumn   guifg=NONE                 guibg=#f5f6f7 ctermbg=231
                                                      "^^^^^^ not 8bit
   hi CursorIM       guifg=#f5f6f7 ctermfg=231  guibg=#5f87af ctermbg=67
                           "^^^^^^ not 8bit
-  hi CursorLine     guifg=NONE                 guibg=#f5f6f7 ctermbg=255
+  hi CursorLine     guifg=NONE                 guibg=#f5f6f7 ctermbg=231
                                                      "^^^^^^ not 8bit
-  hi CursorLineNr   guifg=#bac3cf ctermfg=250  guibg=#f5f6f7 ctermbg=255
+  hi CursorLineNr   guifg=#bac3cf ctermfg=152  guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi Folded         guifg=#434757 ctermfg=238  guibg=#e7e8eb ctermbg=254
+  hi Folded         guifg=#434757 ctermfg=59   guibg=#e7e8eb ctermbg=189
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi FoldColumn     guifg=#434757 ctermfg=238  guibg=#e7e8eb ctermbg=254
+  hi FoldColumn     guifg=#434757 ctermfg=59   guibg=#e7e8eb ctermbg=189
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi LineNr         guifg=#959ba6 ctermfg=246  guibg=#f5f6f7 ctermbg=255
+  hi LineNr         guifg=#959ba6 ctermfg=109  guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi Pmenu          guifg=#f5f6f7 ctermfg=231  guibg=#49434a ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi PmenuSbar      guifg=#49434a ctermfg=59   guibg=#2e2e2e ctermbg=236
+  hi PmenuSbar      guifg=#49434a ctermfg=59   guibg=#5c616c ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi PmenuSel       guifg=fg                   guibg=#afd7ff ctermbg=153
-  hi PmenuThumb     guifg=fg                   guibg=#bac3cf ctermbg=250
-  hi SignColumn     guifg=#434757 ctermfg=238  guibg=#f5f6f7 ctermbg=254
+  hi PmenuThumb     guifg=fg                   guibg=#bac3cf ctermbg=152
+  hi SignColumn     guifg=#434757 ctermfg=59   guibg=#f5f6f7 ctermbg=254
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi StatusLine     guifg=#f5f6f7 ctermfg=231  guibg=#353945 ctermbg=240
+  hi StatusLine     guifg=#f5f6f7 ctermfg=231  guibg=#353945 ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi StatusLineNC   guifg=#353945 ctermfg=240  guibg=#f5f6f7 ctermbg=255
+  hi StatusLineNC   guifg=#353945 ctermfg=59   guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi TabLine        guifg=#f5f6f7 ctermfg=231  guibg=#49434a ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi TabLineFill    guifg=#353945 ctermfg=240  guibg=#f5f6f7 ctermbg=255
+  hi TabLineFill    guifg=#353945 ctermfg=59   guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi TabLineSel     guifg=#f5f6f7 ctermfg=231  guibg=#afd7ff ctermbg=153
                           "^^^^^^ not 8bit
-  hi VertSplit      guibg=#2e3c44 ctermfg=238  guibg=#f5f6f7 ctermbg=252
+  hi VertSplit      guibg=#2f343f ctermfg=23   guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi WildMenu       guifg=fg                   guibg=#afd7ff ctermbg=153
 elseif s:style == "dark"
@@ -592,39 +592,39 @@ elseif s:style == "dark2"
   hi WildMenu       guifg=fg                   guibg=#005faf ctermbg=25
 elseif s:style == "dark3"
   hi ColorColumn    guifg=NONE                 guibg=#87875f ctermbg=101
-  hi Cursor         guifg=#383c4a ctermfg=235  guibg=#87afd7 ctermbg=110
+  hi Cursor         guifg=#383c4a ctermfg=59   guibg=#87afd7 ctermbg=110
                           "^^^^^^ not 8bit
   hi CursorColumn   guifg=NONE                 guibg=#2f343f ctermbg=234
                                                      "^^^^^^ not 8bit
-  hi CursorIM       guifg=#383c4a ctermfg=235  guibg=#87afd7 ctermbg=110
+  hi CursorIM       guifg=#383c4a ctermfg=59   guibg=#87afd7 ctermbg=110
                           "^^^^^^ not 8bit
-  hi CursorLine     guifg=NONE                 guibg=#2f343f ctermbg=234
-  hi CursorLineNr   guifg=#353945 ctermfg=240  guibg=#2f343f ctermbg=234
+  hi CursorLine     guifg=NONE                 guibg=#2f343f ctermbg=23
+  hi CursorLineNr   guifg=#353945 ctermfg=59   guibg=#2f343f ctermbg=23
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi Folded         guifg=#e2e3e6 ctermfg=254  guibg=#3f4251 ctermbg=236
+  hi Folded         guifg=#e2e3e6 ctermfg=188  guibg=#3f4251 ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi FoldColumn     guifg=#e2e3e6 ctermfg=254  guibg=#3f4251 ctermbg=236
+  hi FoldColumn     guifg=#e2e3e6 ctermfg=188  guibg=#3f4251 ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi LineNr         guifg=#353945 ctermfg=244  guibg=#2f343f ctermbg=234
+  hi LineNr         guifg=#353945 ctermfg=59   guibg=#2f343f ctermbg=23
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi Pmenu          guifg=#383c4a ctermfg=235  guibg=#d3dae3 ctermbg=252
+  hi Pmenu          guifg=#383c4a ctermfg=59   guibg=#d3dae3 ctermbg=188
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi PmenuSbar      guifg=#c4d6e1 ctermfg=251  guibg=#e7e8eb ctermbg=254
+  hi PmenuSbar      guifg=#c4d6e1 ctermfg=251  guibg=#e7e8eb ctermbg=189
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi PmenuSel       guifg=fg                   guibg=#005faf ctermbg=25
-  hi PmenuThumb     guifg=fg                   guibg=#353945 ctermbg=244
-  hi SignColumn     guifg=#c4d6e1 ctermfg=251  guibg=#2f343f ctermbg=236
+  hi PmenuThumb     guifg=fg                   guibg=#353945 ctermbg=59
+  hi SignColumn     guifg=#c4d6e1 ctermfg=251  guibg=#2f343f ctermbg=23
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi StatusLine     guifg=#383c4a ctermfg=235  guibg=#d3dae3 ctermbg=252
+  hi StatusLine     guifg=#383c4a ctermfg=59   guibg=#d3dae3 ctermbg=188
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi StatusLineNC   guifg=#bac3cf ctermfg=250  guibg=#2f343f ctermbg=234
+  hi StatusLineNC   guifg=#bac3cf ctermfg=152  guibg=#2f343f ctermbg=23
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi TabLine        guifg=#383c4a ctermfg=235  guibg=#d3dae3 ctermbg=252
+  hi TabLine        guifg=#383c4a ctermfg=59   guibg=#d3dae3 ctermbg=188
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi TabLineFill    guifg=#bac3cf ctermfg=250  guibg=#2f343f ctermbg=234
+  hi TabLineFill    guifg=#bac3cf ctermfg=152  guibg=#2f343f ctermbg=23
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi TabLineSel     guifg=fg                   guibg=#005faf ctermbg=25
-  hi VertSplit      guifg=#bac3cf ctermfg=238  guibg=#2f343f ctermbg=252
+  hi VertSplit      guifg=#bac3cf ctermfg=152  guibg=#2f343f ctermbg=23
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi WildMenu       guifg=fg                   guibg=#005faf ctermbg=25
 endif
@@ -707,7 +707,7 @@ elseif s:style == "light2"
   hi Ignore         guifg=#f0f0f0 ctermfg=255
                           "^^^^^^ not 8bit
 elseif s:style == "light3"
-  hi Ignore         guifg=#f5f6f7 ctermfg=255
+  hi Ignore         guifg=#f5f6f7 ctermfg=231
                           "^^^^^^ not 8bit
 elseif s:style == "dark"
   hi Ignore         guifg=#263238 ctermfg=235
@@ -716,7 +716,7 @@ elseif s:style == "dark2"
   hi Ignore         guifg=#212121 ctermfg=235
                           "^^^^^^ not 8bit
 elseif s:style == "dark3"
-  hi Ignore         guifg=#383c4a ctermfg=235
+  hi Ignore         guifg=#383c4a ctermfg=59
                           "^^^^^^ not 8bit
 endif
 hi Underlined       guifg=fg
