@@ -35,6 +35,23 @@ PALETTE2=(
   5c5c5c
 )
 
+PALETTE3=(
+  f5f6f7
+  e7e8eb
+  d3dae3
+  bac3cf
+  959ba6
+  434757
+  353945
+  3f4251
+  383c4a
+  e7e8eb
+  c4d6e1
+  e2e3e6
+  2f343f
+  474b5b
+)
+
 #
 # Functions
 #
