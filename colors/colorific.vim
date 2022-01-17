@@ -495,9 +495,9 @@ elseif s:style == "light3"
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi LineNr         guifg=#959ba6 ctermfg=109  guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi Pmenu          guifg=#f5f6f7 ctermfg=231  guibg=#49434a ctermbg=59
+  hi Pmenu          guifg=#f5f6f7 ctermfg=231  guibg=#474b5b ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi PmenuSbar      guifg=#49434a ctermfg=59   guibg=#5c616c ctermbg=59
+  hi PmenuSbar      guifg=#474b5b ctermfg=59   guibg=#5c616c ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi PmenuSel       guifg=fg                   guibg=#afd7ff ctermbg=153
   hi PmenuThumb     guifg=fg                   guibg=#bac3cf ctermbg=152
@@ -507,7 +507,7 @@ elseif s:style == "light3"
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi StatusLineNC   guifg=#353945 ctermfg=59   guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
-  hi TabLine        guifg=#f5f6f7 ctermfg=231  guibg=#49434a ctermbg=59
+  hi TabLine        guifg=#f5f6f7 ctermfg=231  guibg=#474b5b ctermbg=59
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit
   hi TabLineFill    guifg=#353945 ctermfg=59   guibg=#f5f6f7 ctermbg=231
                           "^^^^^^ not 8bit           "^^^^^^ not 8bit

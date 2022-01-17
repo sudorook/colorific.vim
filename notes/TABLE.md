@@ -1,28 +1,28 @@
 # Color Table
 
-| Field           | Light2 | Light3 | Dark2  | Dark3  | 
-| :---:           | :---:  | :---:  | :---:  | :---:  | 
-| Normal fg       | 2e2e2e | 5c616c | e3e3e3 | d3dae3 | 
-| Comment fg      | 949494 | 959ba6 | 949494 | 959ba6 | 
-| GitGutter bg    | ededed | e7e8eb | 1c1c1c | 2f343f | 
-| Search fg       | -      | -      | 212121 | 383c4a | 
-| MatchParen fg   | -      | -      | f0f0f0 |        | 
-| ColorColumn bg  | d7d7af | -      | 87875f | -      | 
-| Cursor fg       | f0f0f0 | f5f6f7 | 212121 | 383c4a | 
-| Cursor bg       | 5f87af | -      | 87afd7 | -      | 
-| CursorLineNr fg | bdbdbd | bac3cf | 545454 | 353945 | 
-| Folded fg       | 474747 | 434757 | e4e4e4 | e2e3e6 | 
-| Folded bg       | e3e3e3 | e7e8eb | 2e2e2e | 3f4251 | 
-| LineNr fg       | 949494 | 959ba6 | 545454 | 353945 | 
-| Pmenu bg        | 5c5c5c | 49434a | d0d0d0 | d3dae3 | 
-| PmenuSbar fg    | 5c5c5c | 49434a | c6c6c6 | c4d6e1 | 
-| PmenuThumb bg   | e3e3e3 | e7e8eb | 545454 | 353945 | 
-| SignColumn fg   | 474747 | 434757 | c6c6c6 | c4d6e1 | 
-| SignColumn bg   | e3e3e3 | e7e8eb | 2e2e2e | 3f4251 | 
-| StatusLine bg   | 545454 | 353945 | d0d0d0 | d3dae3 | 
-| StatusLineNC fg | 545454 | 353945 | bdbdbd |        | 
-| VertSplit fg    | -      | -      | -      | -      | 
-| VertSplit bg    | 5c5c5c | 49434a | d0d0d0 | d3dae3 | 
+| Field           | Light2 | Light3 | Dark2  | Dark3  |
+| :---:           | :---:  | :---:  | :---:  | :---:  |
+| Normal fg       | 2e2e2e | 5c616c | e3e3e3 | d3dae3 |
+| Comment fg      | 949494 | 959ba6 | 949494 | 959ba6 |
+| GitGutter bg    | ededed | e7e8eb | 1c1c1c | 2f343f |
+| Search fg       | -      | -      | 212121 | 383c4a |
+| MatchParen fg   | -      | -      | f0f0f0 |        |
+| ColorColumn bg  | d7d7af | -      | 87875f | -      |
+| Cursor fg       | f0f0f0 | f5f6f7 | 212121 | 383c4a |
+| Cursor bg       | 5f87af | -      | 87afd7 | -      |
+| CursorLineNr fg | bdbdbd | bac3cf | 545454 | 353945 |
+| Folded fg       | 474747 | 434757 | e4e4e4 | e2e3e6 |
+| Folded bg       | e3e3e3 | e7e8eb | 2e2e2e | 3f4251 |
+| LineNr fg       | 949494 | 959ba6 | 545454 | 353945 |
+| Pmenu bg        | 5c5c5c | 474b5b | d0d0d0 | d3dae3 |
+| PmenuSbar fg    | 5c5c5c | 474b5b | c6c6c6 | c4d6e1 |
+| PmenuThumb bg   | e3e3e3 | e7e8eb | 545454 | 353945 |
+| SignColumn fg   | 474747 | 434757 | c6c6c6 | c4d6e1 |
+| SignColumn bg   | e3e3e3 | e7e8eb | 2e2e2e | 3f4251 |
+| StatusLine bg   | 545454 | 353945 | d0d0d0 | d3dae3 |
+| StatusLineNC fg | 545454 | 353945 | bdbdbd |        |
+| VertSplit fg    | -      | -      | -      | -      |
+| VertSplit bg    | 5c5c5c | 474b5b | d0d0d0 | d3dae3 |
 
 
 ## Arc
