@@ -7,8 +7,10 @@ set -eu
 
 DARK=(  cfd8dc 2e3c44 607d8b b0b3c5 37474f b0bec5 435761)
 DARK2=( e3e3e3 1c1c1c 545454 e4e4e4 2e2e2e d0d0d0 404040)
+DARK3=( d3dae3 2f343f 353945 d3dae3 3f4251 d3dae3 434757)
 LIGHT=( 78909c bac5cc 37474f cfd8dc e3e8eb eceff1 607d8b)
 LIGHT2=(949494 d9d9d9 2e2e2e e3e3e3 ededed f0f0f0 545454)
+LIGHT3=(959ba6 dddee1 5c616c e7e8eb f5f6f7 ffffff 353945)
 
 
 #
