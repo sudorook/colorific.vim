@@ -1,0 +1,41 @@
+#
+# Colorific - Tmux Theme
+#
+# Forked from Powerline Gray by Jim Myhrberg <contact@jimeh.me>.
+#
+# Requires terminal to be using a powerline compatible font, find one here:
+# https://github.com/Lokaltog/powerline-fonts
+#
+
+# Status update interval
+set -g status-interval 1
+
+# Basic status bar colors
+set -g status-fg "#d3dae3"
+set -g status-bg "#2f343f"
+
+# Left side of status bar
+set -g status-left-length 40
+set -g status-left "#[fg=#383c4a,bg=#d3dae3,bold] #S #[fg=#d3dae3,bg=#434757,bold]#[fg=#d3dae3,bg=#434757] #(whoami) #[fg=#434757,bg=#3f4251]#[fg=#d3dae3,bg=#3f4251] #I:#P #[fg=#3f4251,bg=#2f343f,nobold]"
+
+# Right side of status bar
+set -g status-right-length 150
+set -g status-right "#[fg=#3f4251,bg=#2f343f,nobold]#[fg=#d3dae3,bg=#3f4251] %H:%M:%S #[fg=#434757,bg=#3f4251]#[fg=#d3dae3,bg=#434757]  %d-%b-%y #[fg=#d3dae3,bg=#434757,bold]#[fg=#383c4a,bg=#d3dae3,bold] #H "
+
+# Window status
+set -g window-status-format "  #I:#W#F  "
+set -g window-status-current-format "#[fg=#2f343f,bg=#3f4251]#[fg=#e2e3e6,bg=#3f4251,nobold] #I:#W#F #[fg=#2f343f,bg=#3f4251,nobold]"
+
+# Window separator
+set -g window-status-separator ""
+
+# Window status alignment
+set -g status-justify centre
+
+# Pane number indicator
+set -g display-panes-colour "#2f343f"
+set -g display-panes-active-colour "#e2e3e6"
+
+# Clock mode
+set -g clock-mode-colour "#d3dae3"
+set -g clock-mode-style 24
