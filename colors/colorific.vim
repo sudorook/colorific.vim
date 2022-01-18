@@ -1,7 +1,7 @@
 " ============================================================================
 " Name:     Colorific vim color scheme
 " Author:   sudorook <daemon@nullcodon.com>
-" Version:  0.1.0
+" Version:  0.2.0
 " ----------------------------------------------------------------------------
 "
 " Light and dark color scheme for GUI and 256 color terminal. Will maybe add
