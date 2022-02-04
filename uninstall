@@ -14,6 +14,7 @@ rm_items() {
 }
 
 VIMDIR=${HOME}/.vim
+NEOVIMDIR=${HOME}/.config/nvim
 GITDIR=${HOME}/.config/git
 TMUXDIR=${HOME}/.tmux
 
@@ -22,6 +23,10 @@ rm_items \
   "${VIMDIR}"/colors \
   "${VIMDIR}"/autoload/airline/themes/colorific.vim \
   "${VIMDIR}"/autoload/airline/themes \
+  "${NEOVIMDIR}"/colors/colorific.vim \
+  "${NEOVIMDIR}"/colors \
+  "${NEOVIMDIR}"/autoload/airline/themes/colorific.vim \
+  "${NEOVIMDIR}"/autoload/airline/themes \
   "${GITDIR}"/gitk-{light,light2,light3,dark,dark2,dark3} \
   "${GITDIR}" \
   "${TMUXDIR}"/{light,light2,light3,dark,dark2,dark3}.tmuxtheme \

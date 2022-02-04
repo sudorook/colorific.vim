@@ -8,6 +8,11 @@ mkdir -vp "${VIMDIR}/colors" "${VIMDIR}/autoload/airline/themes"
 cp -vf "${ROOT}"/colors/colorific.vim "${VIMDIR}/colors/"
 cp -vf "${ROOT}"/autoload/airline/themes/colorific.vim "${VIMDIR}/autoload/airline/themes/"
 
+NEOVIMDIR=${HOME}/.config/nvim
+mkdir -vp "${NEOVIMDIR}/colors" "${NEOVIMDIR}/autoload/airline/themes"
+cp -vf "${ROOT}"/colors/colorific.vim "${NEOVIMDIR}/colors/"
+cp -vf "${ROOT}"/autoload/airline/themes/colorific.vim "${NEOVIMDIR}/autoload/airline/themes/"
+
 GITDIR=${HOME}/.config/git
 mkdir -vp "${GITDIR}"
 cp -vf "${ROOT}"/git/gitk-{light,light2,light3,dark,dark2,dark3} "${GITDIR}/"
