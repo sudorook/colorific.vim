@@ -9,49 +9,59 @@ terminals. 16-color ones are unsupported, and the theme will not work with
 them. To use truecolor (e.g., #ABC123) support, make sure that you have `set
 termguicolors` in your vimrc.
 
-The theme comes in two light and dark variants. `light` and `dark` use
-blue-grey primary colors, and `light2` and `dark2` use white and black for
-deeper contrast. Note that colorific will not override the system background
-color, so pick the variant that looks best with your system theme. Colorific
-was made with [Adapta](https://github.com/adapta-project/adapta-gtk-theme) and
-[Plata](https://gitlab.com/tista500/plata-theme) in mind, so these two may look
-best.
-
-Syntax highlighting uses material colors that have been tweaked to lower the
+Syntax highlighting uses material colors manually tweaked to lower the
 saturation and brightness. Why material colors? Because when you try to find
 good highlighting colors out of all the colors available, it helps to have a
 starting point.
 
-Another point worth noting is that the theme overrides some of the Vim syntax
-highlighter defaults for various languages so that the it appears more
+The theme comes in three light and dark UI variants that correspond to some
+prominent GTK themes:
+
+- `light` and `dark` use blue-grey primary colors to match those used in the
+  [Adapta GTK theme](https://github.com/adapta-project/adapta-gtk-theme).
+- `light2` and `dark2` use white and black for starker contrast, similar to the
+  [Plata](https://gitlab.com/tista500/plata-theme) and
+  [Materia](https://github.com/nana-4/materia-theme) GTK themes.
+- `light3` and `dark3` use the off-blue and greyish colors from the
+  [Arc GTK theme](https://github.com/jnsh/arc-theme). Contrast between colors
+  is too low for good cterm support, so make sure truecolor support is enabled.
+
+Note that colorific will not override the system background color, so pick the
+variant that looks best with your system theme.
+
+Another point worth noting is that this theme overrides some of the Vim syntax
+highlighter defaults for various languages so that coloration appears more
 consistent across them.
 
 
 ## Installation
 
-```
-git clone https://github.com/sudorook/colorific.vim colorific.vim
-cd colorific.vim
-./install.sh
-```
+To install, clone the repository and run `./install`.
 
-To install the theme as root, run `sudo ./install.sh` instead.
+To install the theme as root, run `sudo ./install` instead.
+
+To uninstall, use `./uninstall`.
 
 
 ## Configuration
 
+### Vim
+
 Add the following lines to your vimrc:
 ```
-let g:colorific_style='dark'
+let g:colorific_style='<style>'
 colo colorific
-set background=dark
+set background=<bg>
 syntax on
 ```
 
-Use `set background=light` instead if you use a light system theme, and use
-`let g:colorific_style='dark2'` or `let g:colorific_style='light2'` to use the
-higher-contrast variant.  (If you're not using the `dark2` or `light2`
-variants, this line can be omitted.)
+- `<style>` is the name of the theme to load. Possible values are `light`,
+  `light2`, `light3`, `dark`, `dark2`, `dark3`.
+
+- `<bg>` refers to the background color of your terminal or system theme. Set
+  it to `light` for a light background and `dark`for a dark one.
+
+### Airline
 
 Colorific can also be used to color the airline bar. Load the theme by adding
 to your vimrc:
@@ -59,7 +69,7 @@ to your vimrc:
 let g:airline_theme='colorific'
 ```
 
-Note that if vim is invoked as root, colorific needs to be loaded in
+Note that if Vim is invoked as root, colorific needs to be loaded in
 /root/.vimrc.
 
 
@@ -87,10 +97,9 @@ Note that if vim is invoked as root, colorific needs to be loaded in
 
 Stylings for gitk are available in the gitk/ directory. To set a gitk theme,
 copy the file for the desired theme (e.g. gitk-dark2) to a file called
-~/.config/git/gitk. The file needs to be renamed as 'gitk.' Symlinks would
-work, too.
+~/.config/git/gitk. The file name _must_ be 'gitk.' Symlinks would work, too.
 
-Note that the `install.sh` script will install all four variants with names
+Note that the `install` script will install all four variants with names
 unchanged to ~/.config/git/. To pick one, simply rename/symlink the file.
 
 
@@ -103,8 +112,8 @@ Themes for tmux are available in the tmux/ directory. To use them, edit your
 source-file <path>/<to>/<theme>.tmuxtheme
 ```
 
-where `<theme>` refers to one of the available variants (light2, dark2, dark,
-or light).
+where `<theme>` refers to one of the available variants (light3, dark3, light2,
+dark2, dark, or light).
 
-Note that the `install.sh` script will copy the themes in tmux/ to the ~/.tmux/
+Note that the `install` script will copy the themes in tmux/ to the ~/.tmux/
 directory. No files need to be renamed for tmux.
