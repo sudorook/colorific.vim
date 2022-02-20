@@ -17,6 +17,7 @@ VIMDIR=${HOME}/.vim
 NEOVIMDIR=${HOME}/.config/nvim
 GITDIR=${HOME}/.config/git
 TMUXDIR=${HOME}/.tmux
+KITTYDIR=${HOME}/.config/kitty/themes
 
 rm_items \
   "${VIMDIR}"/colors/colorific.vim \
@@ -31,3 +32,5 @@ rm_items \
   "${GITDIR}" \
   "${TMUXDIR}"/{light,light2,light3,dark,dark2,dark3}.tmuxtheme \
   "${TMUXDIR}"
+  "${KITTYDIR}"/{light,light2,light3,dark,dark2,dark3}.conf \
+  "${KITTYDIR}"

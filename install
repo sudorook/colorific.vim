@@ -20,3 +20,7 @@ cp -vf "${ROOT}"/git/gitk-{light,light2,light3,dark,dark2,dark3} "${GITDIR}/"
 TMUXDIR=${HOME}/.tmux
 mkdir -vp "${TMUXDIR}"
 cp -vf "${ROOT}"/tmux/{light,light2,light3,dark,dark2,dark3}.tmuxtheme "${TMUXDIR}/"
+
+KITTYDIR=${HOME}/.config/kitty/themes
+mkdir -vp "${KITTYDIR}"
+cp -vf "${ROOT}"/kitty/{light,light2,light3,dark,dark2,dark3}.conf "${KITTYDIR}/"
