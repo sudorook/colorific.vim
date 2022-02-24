@@ -3,24 +3,108 @@ set -eu
 
 ROOT="$(dirname "${0}")"
 
-VIMDIR=${HOME}/.vim
-mkdir -vp "${VIMDIR}/colors" "${VIMDIR}/autoload/airline/themes"
-cp -vf "${ROOT}"/colors/colorific.vim "${VIMDIR}/colors/"
-cp -vf "${ROOT}"/autoload/airline/themes/colorific.vim "${VIMDIR}/autoload/airline/themes/"
+function install_gitk {
+  gitdir=${HOME}/.config/git
+  mkdir -vp "${gitdir}"
+  cp -vf \
+    "${ROOT}"/git/gitk-{light,light2,light3,dark,dark2,dark3} \
+    "${gitdir}"/
+}
 
-NEOVIMDIR=${HOME}/.config/nvim
-mkdir -vp "${NEOVIMDIR}/colors" "${NEOVIMDIR}/autoload/airline/themes"
-cp -vf "${ROOT}"/colors/colorific.vim "${NEOVIMDIR}/colors/"
-cp -vf "${ROOT}"/autoload/airline/themes/colorific.vim "${NEOVIMDIR}/autoload/airline/themes/"
+function install_neovim {
+  neovimdir=${HOME}/.config/nvim
+  mkdir -vp \
+    "${neovimdir}"/colors \
+    "${neovimdir}"/autoload/airline/themes
+  cp -vf "${ROOT}"/colors/colorific.vim "${neovimdir}"/colors/
+  cp -vf \
+    "${ROOT}"/autoload/airline/themes/colorific.vim \
+    "${neovimdir}"/autoload/airline/themes/
+}
 
-GITDIR=${HOME}/.config/git
-mkdir -vp "${GITDIR}"
-cp -vf "${ROOT}"/git/gitk-{light,light2,light3,dark,dark2,dark3} "${GITDIR}/"
+function install_kitty {
+  kittydir=${HOME}/.config/kitty/themes
+  mkdir -vp "${kittydir}"
+  cp -vf \
+    "${ROOT}"/kitty/{light,light2,light3,dark,dark2,dark3}.conf \
+    "${kittydir}/"
+}
 
-TMUXDIR=${HOME}/.tmux
-mkdir -vp "${TMUXDIR}"
-cp -vf "${ROOT}"/tmux/{light,light2,light3,dark,dark2,dark3}.tmuxtheme "${TMUXDIR}/"
+function install_tmux {
+  tmuxdir=${HOME}/.tmux
+  mkdir -vp "${tmuxdir}"
+  cp -vf \
+    "${ROOT}"/tmux/{light,light2,light3,dark,dark2,dark3}.tmuxtheme \
+    "${tmuxdir}/"
+}
 
-KITTYDIR=${HOME}/.config/kitty/themes
-mkdir -vp "${KITTYDIR}"
-cp -vf "${ROOT}"/kitty/{light,light2,light3,dark,dark2,dark3}.conf "${KITTYDIR}/"
+function install_vim {
+  vimdir=${HOME}/.vim
+  mkdir -vp "${vimdir}"/colors "${vimdir}"/autoload/airline/themes
+  cp -vf "${ROOT}"/colors/colorific.vim "${vimdir}"/colors/
+  cp -vf \
+    "${ROOT}"/autoload/airline/themes/colorific.vim \
+    "${vimdir}"/autoload/airline/themes/
+}
+
+function print_usage {
+  echo "./install usage:"
+  echo "  -g|--gitk        install gitk files"
+  echo "  -k|--kitty       install kitty files"
+  echo "  -n|--neovim      install neovim files"
+  echo "  -t|--tmux        install tmux files"
+  echo "  -v|--vim         install vim files"
+  echo "  -h|--help        print this message"
+}
+
+OPTIONS=ghkntv
+LONGOPTIONS=git,help,kitty,neovim,tmux,vim
+PARSED=$(getopt -o ${OPTIONS} --long ${LONGOPTIONS} -n "${0}" -- "${@}")
+eval set -- "${PARSED}"
+
+if [ ${#} -eq 1 ]; then
+  install_gitk
+  install_kitty
+  install_neovim
+  install_tmux
+  install_vim
+fi
+
+while [ ${#} -ge 1 ]; do
+  case ${1} in
+    -g|--gitk)
+      install_gitk
+      shift
+      ;;
+    -k|--kitty)
+      install_kitty
+      shift
+      ;;
+    -n|--neovim)
+      install_neovim
+      shift
+      ;;
+    -t|--tmux)
+      install_tmux
+      shift
+      ;;
+    -v|--vim)
+      install_vim
+      shift
+      ;;
+    -h|--help)
+      print_usage
+      exit
+      ;;
+    --)
+      shift
+      break
+      ;;
+    *)
+      echo "ERROR: invalid flag ${2@Q}."
+      exit 3
+      ;;
+  esac
+done
+
+echo "Done."

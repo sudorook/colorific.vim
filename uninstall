@@ -1,7 +1,7 @@
 #! /bin/bash
 set -eu
 
-rm_items() {
+function rm_items {
   local item
   for item in "${@}"; do
     if [ -f "${item}" ]; then
@@ -13,24 +13,103 @@ rm_items() {
   done
 }
 
-VIMDIR=${HOME}/.vim
-NEOVIMDIR=${HOME}/.config/nvim
-GITDIR=${HOME}/.config/git
-TMUXDIR=${HOME}/.tmux
-KITTYDIR=${HOME}/.config/kitty/themes
+function install_gitk {
+  gitdir=${HOME}/.config/git
+  rm_items \
+    "${gitdir}"/gitk-{light,light2,light3,dark,dark2,dark3} \
+    "${gitdir}"
+}
 
-rm_items \
-  "${VIMDIR}"/colors/colorific.vim \
-  "${VIMDIR}"/colors \
-  "${VIMDIR}"/autoload/airline/themes/colorific.vim \
-  "${VIMDIR}"/autoload/airline/themes \
-  "${NEOVIMDIR}"/colors/colorific.vim \
-  "${NEOVIMDIR}"/colors \
-  "${NEOVIMDIR}"/autoload/airline/themes/colorific.vim \
-  "${NEOVIMDIR}"/autoload/airline/themes \
-  "${GITDIR}"/gitk-{light,light2,light3,dark,dark2,dark3} \
-  "${GITDIR}" \
-  "${TMUXDIR}"/{light,light2,light3,dark,dark2,dark3}.tmuxtheme \
-  "${TMUXDIR}"
-  "${KITTYDIR}"/{light,light2,light3,dark,dark2,dark3}.conf \
-  "${KITTYDIR}"
+function install_neovim {
+  neovimdir=${HOME}/.config/nvim
+  rm_items \
+    "${neovimdir}"/colors/colorific.vim \
+    "${neovimdir}"/colors \
+    "${neovimdir}"/autoload/airline/themes/colorific.vim \
+    "${neovimdir}"/autoload/airline/themes
+}
+
+function install_kitty {
+  kittydir=${HOME}/.config/kitty/themes
+  rm_items \
+    "${kittydir}"/{light,light2,light3,dark,dark2,dark3}.conf \
+    "${kittydir}"
+}
+
+function install_tmux {
+  tmuxdir=${HOME}/.tmux
+  rm_items \
+    "${tmuxdir}"/{light,light2,light3,dark,dark2,dark3}.tmuxtheme \
+    "${tmuxdir}"
+}
+
+function install_vim {
+  vimdir=${HOME}/.vim
+  rm_items \
+    "${vimdir}"/colors/colorific.vim \
+    "${vimdir}"/colors \
+    "${vimdir}"/autoload/airline/themes/colorific.vim \
+    "${vimdir}"/autoload/airline/themes
+}
+
+function print_usage {
+  echo "./install usage:"
+  echo "  -g|--gitk        install gitk files"
+  echo "  -k|--kitty       install kitty files"
+  echo "  -n|--neovim      install neovim files"
+  echo "  -t|--tmux        install tmux files"
+  echo "  -v|--vim         install vim files"
+  echo "  -h|--help        print this message"
+}
+
+OPTIONS=ghkntv
+LONGOPTIONS=git,help,kitty,neovim,tmux,vim
+PARSED=$(getopt -o ${OPTIONS} --long ${LONGOPTIONS} -n "${0}" -- "${@}")
+eval set -- "${PARSED}"
+
+if [ ${#} -eq 1 ]; then
+  install_gitk
+  install_kitty
+  install_neovim
+  install_tmux
+  install_vim
+fi
+
+while [ ${#} -ge 1 ]; do
+  case ${1} in
+    -g|--gitk)
+      install_gitk
+      shift
+      ;;
+    -k|--kitty)
+      install_kitty
+      shift
+      ;;
+    -n|--neovim)
+      install_neovim
+      shift
+      ;;
+    -t|--tmux)
+      install_tmux
+      shift
+      ;;
+    -v|--vim)
+      install_vim
+      shift
+      ;;
+    -h|--help)
+      print_usage
+      exit
+      ;;
+    --)
+      shift
+      break
+      ;;
+    *)
+      echo "ERROR: invalid flag ${2@Q}."
+      exit 3
+      ;;
+  esac
+done
+
+echo "Done."
