@@ -13,14 +13,14 @@ function rm_items {
   done
 }
 
-function install_gitk {
+function uninstall_gitk {
   gitdir=${HOME}/.config/git
   rm_items \
     "${gitdir}"/gitk-{light,light2,light3,dark,dark2,dark3} \
     "${gitdir}"
 }
 
-function install_neovim {
+function uninstall_neovim {
   neovimdir=${HOME}/.config/nvim
   rm_items \
     "${neovimdir}"/colors/colorific.vim \
@@ -29,21 +29,21 @@ function install_neovim {
     "${neovimdir}"/autoload/airline/themes
 }
 
-function install_kitty {
+function uninstall_kitty {
   kittydir=${HOME}/.config/kitty/themes
   rm_items \
     "${kittydir}"/{light,light2,light3,dark,dark2,dark3}.conf \
     "${kittydir}"
 }
 
-function install_tmux {
+function uninstall_tmux {
   tmuxdir=${HOME}/.tmux
   rm_items \
     "${tmuxdir}"/{light,light2,light3,dark,dark2,dark3}.tmuxtheme \
     "${tmuxdir}"
 }
 
-function install_vim {
+function uninstall_vim {
   vimdir=${HOME}/.vim
   rm_items \
     "${vimdir}"/colors/colorific.vim \
@@ -53,12 +53,12 @@ function install_vim {
 }
 
 function print_usage {
-  echo "./install usage:"
-  echo "  -g|--gitk        install gitk files"
-  echo "  -k|--kitty       install kitty files"
-  echo "  -n|--neovim      install neovim files"
-  echo "  -t|--tmux        install tmux files"
-  echo "  -v|--vim         install vim files"
+  echo "./uninstall usage:"
+  echo "  -g|--gitk        uninstall gitk files"
+  echo "  -k|--kitty       uninstall kitty files"
+  echo "  -n|--neovim      uninstall neovim files"
+  echo "  -t|--tmux        uninstall tmux files"
+  echo "  -v|--vim         uninstall vim files"
   echo "  -h|--help        print this message"
 }
 
@@ -68,33 +68,33 @@ PARSED=$(getopt -o ${OPTIONS} --long ${LONGOPTIONS} -n "${0}" -- "${@}")
 eval set -- "${PARSED}"
 
 if [ ${#} -eq 1 ]; then
-  install_gitk
-  install_kitty
-  install_neovim
-  install_tmux
-  install_vim
+  uninstall_gitk
+  uninstall_kitty
+  uninstall_neovim
+  uninstall_tmux
+  uninstall_vim
 fi
 
 while [ ${#} -ge 1 ]; do
   case ${1} in
     -g|--gitk)
-      install_gitk
+      uninstall_gitk
       shift
       ;;
     -k|--kitty)
-      install_kitty
+      uninstall_kitty
       shift
       ;;
     -n|--neovim)
-      install_neovim
+      uninstall_neovim
       shift
       ;;
     -t|--tmux)
-      install_tmux
+      uninstall_tmux
       shift
       ;;
     -v|--vim)
-      install_vim
+      uninstall_vim
       shift
       ;;
     -h|--help)
