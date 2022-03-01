@@ -1,0 +1,170 @@
+schemes:
+  light: &light
+    primary:
+      background:	'#FFFFFF'
+      foreground:	'#222D32'
+    cursor:
+      cursor:	CellForeground
+    selection:
+      text:	'#005F5F'
+      background:	'#E1F5F5'
+    normal:
+      black:	'#4A4E4F'
+      red:	'#F6584E'
+      green:	'#27C465'
+      yellow:	'#DABB19'
+      blue:	'#4098DE'
+      magenta:	'#CF6FDE'
+      cyan:	'#39C4B1'
+      white:	'#D3D7CF'
+    bright:
+      black:	'#B2B5AF'
+      red:	'#FC7979'
+      green:	'#47DA82'
+      yellow:	'#ECDE66'
+      blue:	'#67B1EB'
+      magenta:	'#E69AF3'
+      cyan:	'#7CDCC6'
+      white:	'#E1E1D7'
+
+  dark: &dark
+    primary:
+      background:	'#222D32'
+      foreground:	'#CFD8DC'
+    cursor:
+      cursor:	CellForeground
+    selection:
+      text:	'#87D7D7'
+      background:	'#294040'
+    normal:
+      black:	'#4A4E4F'
+      red:	'#F6584E'
+      green:	'#27C465'
+      yellow:	'#DABB19'
+      blue:	'#4098DE'
+      magenta:	'#CF6FDE'
+      cyan:	'#39C4B1'
+      white:	'#D3D7CF'
+    bright:
+      black:	'#B2B5AF'
+      red:	'#FC7979'
+      green:	'#47DA82'
+      yellow:	'#ECDE66'
+      blue:	'#67B1EB'
+      magenta:	'#E69AF3'
+      cyan:	'#7CDCC6'
+      white:	'#E1E1D7'
+
+  light2: &light2
+    primary:
+      background:	'#FFFFFF'
+      foreground:	'#121212'
+    cursor:
+      cursor:	CellForeground
+    selection:
+      text:	'#005F5F'
+      background:	'#E1F5F5'
+    normal:
+      black:	'#2E3436'
+      red:	'#CD372C'
+      green:	'#189D4F'
+      yellow:	'#AD9C02'
+      blue:	'#2576C5'
+      magenta:	'#AD44BE'
+      cyan:	'#07A596'
+      white:	'#414040'
+    bright:
+      black:	'#727270'
+      red:	'#EB6A6A'
+      green:	'#33C870'
+      yellow:	'#D8C946'
+      blue:	'#509EDD'
+      magenta:	'#D282E0'
+      cyan:	'#1DC9B9'
+      white:	'#848080'
+
+  dark2: &dark2
+    primary:
+      background:	'#121212'
+      foreground:	'#E3E3E3'
+    cursor:
+      cursor:	CellForeground
+    selection:
+      text:	'#87D7D7'
+      background:	'#294040'
+    normal:
+      black:	'#4A4E4F'
+      red:	'#F6584E'
+      green:	'#27C465'
+      yellow:	'#DABB19'
+      blue:	'#4098DE'
+      magenta:	'#CF6FDE'
+      cyan:	'#39C4B1'
+      white:	'#D3D7CF'
+    bright:
+      black:	'#B2B5AF'
+      red:	'#FC7979'
+      green:	'#47DA82'
+      yellow:	'#ECDE66'
+      blue:	'#67B1EB'
+      magenta:	'#E69AF3'
+      cyan:	'#7CDCC6'
+      white:	'#E1E1D7'
+
+  light3: &light3
+    primary:
+      background:	'#FFFFFF'
+      foreground:	'#171421'
+    cursor:
+      cursor:	CellForeground
+    selection:
+      text:	'#E1F5F5'
+      background:	'#005F5F'
+    normal:
+      black:	'#2E3436'
+      red:	'#CD372C'
+      green:	'#189D4F'
+      yellow:	'#AD9C02'
+      blue:	'#2576C5'
+      magenta:	'#AD44BE'
+      cyan:	'#07A596'
+      white:	'#414040'
+    bright:
+      black:	'#727270'
+      red:	'#EB6A6A'
+      green:	'#33C870'
+      yellow:	'#D8C946'
+      blue:	'#509EDD'
+      magenta:	'#D282E0'
+      cyan:	'#1DC9B9'
+      white:	'#848080'
+
+  dark3: &dark3
+    primary:
+      background:	'#353945'
+      foreground:	'#D3DAE3'
+    cursor:
+      cursor:	CellForeground
+    selection:
+      text:	'#87D7D7'
+      background:	'#294040'
+    normal:
+      black:	'#4A4E4F'
+      red:	'#F6584E'
+      green:	'#27C465'
+      yellow:	'#DABB19'
+      blue:	'#4098DE'
+      magenta:	'#CF6FDE'
+      cyan:	'#39C4B1'
+      white:	'#D3D7CF'
+    bright:
+      black:	'#B2B5AF'
+      red:	'#FC7979'
+      green:	'#47DA82'
+      yellow:	'#ECDE66'
+      blue:	'#67B1EB'
+      magenta:	'#E69AF3'
+      cyan:	'#7CDCC6'
+      white:	'#E1E1D7'
+
+colors: *dark2

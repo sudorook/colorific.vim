@@ -29,6 +29,13 @@ function uninstall_neovim {
     "${neovimdir}"/autoload/airline/themes
 }
 
+function uninstall_alacritty {
+  alacrittydir=${HOME}/.config/alacritty
+  rm_items \
+    "${alacrittydir}"/colorific.yml \
+    "${alacrittydir}"
+}
+
 function uninstall_kitty {
   kittydir=${HOME}/.config/kitty/themes
   rm_items \
@@ -54,6 +61,7 @@ function uninstall_vim {
 
 function print_usage {
   echo "./uninstall usage:"
+  echo "  -a|--alacritty   uninstall alacritty files"
   echo "  -g|--gitk        uninstall gitk files"
   echo "  -k|--kitty       uninstall kitty files"
   echo "  -n|--neovim      uninstall neovim files"
@@ -62,12 +70,13 @@ function print_usage {
   echo "  -h|--help        print this message"
 }
 
-OPTIONS=ghkntv
-LONGOPTIONS=git,help,kitty,neovim,tmux,vim
+OPTIONS=aghkntv
+LONGOPTIONS=alacritty,git,help,kitty,neovim,tmux,vim
 PARSED=$(getopt -o ${OPTIONS} --long ${LONGOPTIONS} -n "${0}" -- "${@}")
 eval set -- "${PARSED}"
 
 if [ ${#} -eq 1 ]; then
+  uninstall_alacritty
   uninstall_gitk
   uninstall_kitty
   uninstall_neovim
@@ -77,6 +86,10 @@ fi
 
 while [ ${#} -ge 1 ]; do
   case ${1} in
+    -a|--alacritty)
+      uninstall_alacritty
+      shift
+      ;;
     -g|--gitk)
       uninstall_gitk
       shift

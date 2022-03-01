@@ -22,6 +22,12 @@ function install_neovim {
     "${neovimdir}"/autoload/airline/themes/
 }
 
+function install_alacritty {
+  alacrittydir=${HOME}/.config/alacritty
+  mkdir -vp "${alacrittydir}"
+  cp -vf "${ROOT}"/alacritty/colorific.yml "${alacrittydir}/"
+}
+
 function install_kitty {
   kittydir=${HOME}/.config/kitty/themes
   mkdir -vp "${kittydir}"
@@ -49,6 +55,7 @@ function install_vim {
 
 function print_usage {
   echo "./install usage:"
+  echo "  -a|--alacritty   install alacritty files"
   echo "  -g|--gitk        install gitk files"
   echo "  -k|--kitty       install kitty files"
   echo "  -n|--neovim      install neovim files"
@@ -57,12 +64,13 @@ function print_usage {
   echo "  -h|--help        print this message"
 }
 
-OPTIONS=ghkntv
-LONGOPTIONS=git,help,kitty,neovim,tmux,vim
+OPTIONS=aghkntv
+LONGOPTIONS=alacritty,git,help,kitty,neovim,tmux,vim
 PARSED=$(getopt -o ${OPTIONS} --long ${LONGOPTIONS} -n "${0}" -- "${@}")
 eval set -- "${PARSED}"
 
 if [ ${#} -eq 1 ]; then
+  install_alacritty
   install_gitk
   install_kitty
   install_neovim
@@ -72,6 +80,10 @@ fi
 
 while [ ${#} -ge 1 ]; do
   case ${1} in
+    -a|--alacritty)
+      install_alacritty
+      shift
+      ;;
     -g|--gitk)
       install_gitk
       shift
