@@ -36,18 +36,31 @@ consistent across them.
 
 ## Installation
 
-To install, clone the repository and run `./install`.
+To install, clone the repository and run `./install`. This will install the Vim
+themes along with all the extras.
 
-To install the theme as root, run `sudo ./install` instead.
+To install a specific component instead of everything, pass any of the
+following flags:
+```
+./install usage:
+  -a|--alacritty   install alacritty files
+  -g|--gitk        install gitk files
+  -k|--kitty       install kitty files
+  -n|--neovim      install neovim files
+  -t|--tmux        install tmux files
+  -v|--vim         install vim files
+  -h|--help        print this message
+```
 
-To uninstall, use `./uninstall`.
+To uninstall, use `./uninstall`. The same program-specific flags in the
+installation script apply here.
 
 
 ## Configuration
 
-### Vim
+### Vim / Neovim
 
-Add the following lines to your vimrc:
+For Vim, edit your `.vimrc` file to contain:
 ```
 let g:colorific_style='<style>'
 colo colorific
@@ -61,16 +74,23 @@ syntax on
 - `<bg>` refers to the background color of your terminal or system theme. Set
   it to `light` for a light background and `dark`for a dark one.
 
+For Neovim, edit the `.config/nvim/init.vim` file instead.
+
+**Note:** If Vim is invoked as root or via the EDITOR environmental variable by
+a program running as root (e.g. `visudo`), you may need to install colorific to
+the root Vim directory. To do so, run `./install` while root and edit the
+/root/.vimrc (or /root/.config/nvim/init.vim) as described above.
+
 ### Airline
 
 Colorific can also be used to color the airline bar. Load the theme by adding
-to your vimrc:
+to your vimrc (for Vim) or init.vim (for Neovim):
 ```
 let g:airline_theme='colorific'
 ```
 
-Note that if Vim is invoked as root, colorific needs to be loaded in
-/root/.vimrc.
+**Note** For root, edit /root/.vimrc or /root/.config/nvim/init.vim as
+applicable.
 
 
 ## Examples
@@ -93,27 +113,50 @@ Note that if Vim is invoked as root, colorific needs to be loaded in
 
 ## Extras
 
+### alacritty
+
+Running the install script (either `./install` or `./install -a` will copy the
+YAML theme file in alacritty/ to ~/.config/alacritty.
+
+To enable a theme, edit your alacritty config file to include:
+```
+import:
+ - ~/.config/alacritty/colorific.yml
+```
+
+To load a particular theme, edit the ~/.config/alacritty/colorific.yml file and
+change the value of `colors` at the bottom to the desired variant (e.g.
+`*dark2`, `*light2`, etc.)
+
 ### gitk
 
-Stylings for gitk are available in the gitk/ directory. To set a gitk theme,
-copy the file for the desired theme (e.g. gitk-dark2) to a file called
-~/.config/git/gitk. The file name _must_ be 'gitk.' Symlinks would work, too.
+The gitk stylings are installed by running `./install` or running `./install
+-g`. This only copies all the gitk-\* variants in the git/ directory of this
+repository to ~/.config/git/.
 
-Note that the `install` script will install all four variants with names
-unchanged to ~/.config/git/. To pick one, simply rename/symlink the file.
+To actually load a theme, copy/rename/move one of these installed variants to
+~/.config/git/gitk. The file name _must_ be 'gitk.'
 
+## kitty
+
+The installation script (run either `./install` or `./install -k`) copies the
+kitty themes in kitty/ to a directory called ~/.config/kitty/themes.
+
+To enable a particular theme, edit the kitty.conf file to have:
+```
+include ./themes/<theme>.conf
+```
+where `<theme>` corresponds to one of the available variants (e.g. `dark2`,
+`light2`, etc.).
 
 ### tmux
 
-Themes for tmux are available in the tmux/ directory. To use them, edit your
-.tmux.conf file to have the line:
-
+Themes for tmux are available in the tmux/ directory. They are installed to the
+~/.tmux directory when running `./install` or `./install -t`. To use them, edit
+the ~/.tmux.conf file to have the line:
 ```
 source-file <path>/<to>/<theme>.tmuxtheme
 ```
 
-where `<theme>` refers to one of the available variants (light3, dark3, light2,
-dark2, dark, or light).
-
-Note that the `install` script will copy the themes in tmux/ to the ~/.tmux/
-directory. No files need to be renamed for tmux.
+where `<theme>` refers to one of the available variants (`light3`, `dark3`,
+`light2`, `dark2`, `dark`, or `light`).
