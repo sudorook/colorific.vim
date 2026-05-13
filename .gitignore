@@ -111,6 +111,9 @@ flycheck_*.el
 # network security
 /network-security.data
 
+# undo-tree
+*.~undo-tree~
+
 #
 # FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Linux.gitignore
 #
@@ -138,6 +141,8 @@ nohup.out
 
 # General
 .DS_Store
+.localized
+__MACOSX/
 .AppleDouble
 .LSOverride
 Icon[]
@@ -181,7 +186,8 @@ Temporary Items
 
 # Swap
 [._]*.s[a-v][a-z]
-!*.svg  # comment out if you don't need vector files
+# comment out the next line if you don't need vector files
+!*.svg
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
